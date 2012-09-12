@@ -5,18 +5,36 @@
   <script src="http://code.jquery.com/jquery-latest.js"></script>
 <!--  carousel-->
   <script src="js/jquery.jcarousel.js"></script>
-  <!--
-    jCarousel skin stylesheet
-  -->
+<!--  fancybox-->
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/fancybox.config.js"></script>
+<!--  masonry-->
+ <script src="js/jquery.masonry.js"></script>
+<!--stylesheets-->
   <link rel="stylesheet" type="text/css" href="css/carousel.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
   <script type="text/javascript">
   
   jQuery(document).ready(function() {
-      jQuery('#mycarousel').jcarousel();
-      jQuery('#mycarousel2').jcarousel();
+      jQuery('#drink-slider').jcarousel();
+      
+      var $container = $('#media-contain');
+      
+        $container.imagesLoaded( function(){
+          $container.masonry({
+            itemSelector : '.box'
+          });
+        });
+      
+      
   });
   
   </script>
+  <!--  smoothscroll-->
+    <script src="js/smoothscroll.js"></script>
+
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Suerte Tequila</title>
 </head>
@@ -24,20 +42,20 @@
     <header>
         <nav class="main-nav-wrapper">
             <div class="logo">
-                <a href="#"></a>
+                <a href="#home"></a>
             </div>
             <ul class="main-nav">
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#tequillas">Tequillas</a></li>
-                <li><a href="#store-locate">Store Locator</a></li>
+                <li><a href="#storelocate">Store Locator</a></li>
                 <li><a href="#photos-vids">Photos &amp; <br/> Videos</a></li>
-                <li><a href="#">The Tequilla <br/> Process</a></li>
+                <li><a href="#the-process">The Tequilla <br/> Process</a></li>
                 <li><a href="#">Press &amp;<br/> Awards</a></li>
             </ul>
         </nav>
     </header>
     <div id="container">
-        <div class="page home">
+        <div class="page home" id="home">
             <h1 class=" title-max-tilt"><span class="luck">Luck</span> <br/><span class="mini-is">is</span><br/><span class="here"> here</span></h1>
             <div class="clearfix"></div>
             <div class="home-descrip">
@@ -68,9 +86,9 @@
                          </p>
                     </div>
                     <p class="recipies">recipies:</p>
-                    <ul id="mycarousel" class="jcarousel-skin-tango">
+                    <ul id="drink-slider" class="jcarousel-skin-tango">
                       <li>
-                          <a href="#">
+                          <a class="fancybox fancybox.iframe" href="single-drink.html">
                               <img src="images/marg.png"/>
                           </a>
                           <div class="recipie-title">
@@ -78,7 +96,7 @@
                           </div>
                       </li>
                       <li>
-                          <a href="#">
+                          <a class="fancybox fancybox.iframe" href="single-drink.html">
                               <img src="images/marg.png"/>
                           </a>
                           <div class="recipie-title">
@@ -86,7 +104,7 @@
                           </div>
                       </li>
                       <li>
-                          <a href="#">
+                          <a class="fancybox fancybox.iframe" href="single-drink.html">
                               <img src="images/marg.png"/>
                           </a>
                           <div class="recipie-title">
@@ -94,7 +112,7 @@
                           </div>
                       </li>
                       <li>
-                          <a href="#">
+                          <a class="fancybox fancybox.iframe" href="single-drink.html">
                               <img src="images/marg.png"/>
                           </a>
                           <div class="recipie-title">
@@ -102,7 +120,7 @@
                           </div>
                       </li>
                       <li>
-                          <a href="#">
+                          <a class="fancybox fancybox.iframe" href="single-drink.html">
                               <img src="images/marg.png"/>
                           </a>
                           <div class="recipie-title">
@@ -110,15 +128,7 @@
                           </div>
                       </li>
                       <li>
-                          <a href="#">
-                              <img src="images/marg.png"/>
-                          </a>
-                          <div class="recipie-title">
-                              <p>Frozen Margarita</p>
-                          </div>
-                      </li>
-                      <li>
-                          <a href="#">
+                          <a class="fancybox fancybox.iframe" href="single-drink.html">
                               <img src="images/marg.png"/>
                           </a>
                           <div class="recipie-title">
@@ -130,28 +140,42 @@
             </div><!--end drink container-->
         </div><!--end page-->
         <div class="clearfix"></div>
-        <div class="page store-locate" id="store-locate">
+        <div class="page store-locate" id="storelocate">
             <h1 class="title-tilt">Store Locator</h1>
             <div class="locator-banner">
                 <h2>Find Suerte Near You!</h2>
-                <div class="store-locator-container">
-                </div>
+            </div>
+            <div class="store-locator-container">
             </div>
         </div><!--end page-->
         <div class="clearfix"></div>
         <div class="page photos-videos" id="photos-vids">
             <h1 class="title-tilt">Photos &amp;<br> Videos</h1>
-            <div class="media-container">
-                <div class="media-item">
-                    <img src="http://placekitten.com/g/200/300">
+            <div class="media-container" id="media-contain" class="clearfix">
+                <div class="media-item box">
+                    <img src="http://placekitten.com/g/200/100">
                 </div>
-                <div class="media-item">
-                    <img src="http://placekitten.com/g/200/300">
+                <div class="media-item box">
+                    <img src="http://placekitten.com/g/400/300">
                 </div>
-                <div class="media-item">
+                <div class="media-item box">
+                    <img src="http://placekitten.com/g/200/400">
+                </div>
+                <div class="media-item box">
+                    <img src="http://placekitten.com/g/200/400">
+                </div>
+                <div class="media-item box">
                     <img src="http://placekitten.com/g/200/300">
                 </div>
             </div>
+        </div><!--end page-->
+        <div class="clearfix"></div>
+        <div class="page process" id="the-process" >
+            <h1 class="title-tilt"><span class="the-word">The</span><span class="tequilla-word"> Tequilla</span><br> Process</h1>
+            <div class="process-descrip">
+                <p>Pellentesque feugiat ante sit amet augue mollis ut convallis justo tempus. Phasellus laoreet tincidunt neque venenatis scelerisque. Sed ut orci tempus leo malesuada varius non sit amet risus. Mauris pellentesque, lectus et ullamcorper rutrum, augue velit placerat lacus, sit amet malesuada mi mauris sed mi. Nam non ligula augue. Aliquam ut volutpat quam. Nam vehicula metus id ante semper in luctus ligula pretium. In hac habitasse platea dictumst. Integer sem libero, gravida id tempor malesuada, blandit et nibh. Integer nec hendrerit mi. Nullam dolor lorem, dictum vitae adipiscing nec, lobortis faucibus enim. Nullam auctor, nunc et vestibulum accumsan, elit nulla hendrerit elit, vel laoreet enim libero quis quam.</p>
+            </div>
+                    
         </div><!--end page-->
         <div class="clearfix"></div>
     </div> <!--end container-->

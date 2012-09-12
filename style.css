@@ -34,7 +34,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 body{
   font-family: 'patronmedium';
-  background-color: #9ba2a8;
+  background-color: black;
 }
 
 a{
@@ -81,6 +81,21 @@ strong{
     font-size: 85px;
 }
 
+.the-word {
+    transform:rotate(-90deg)!important;
+    -ms-transform:rotate(-90deg)!important; /* IE 9 */
+    -moz-transform:rotate(-90deg)!important; /* Firefox */
+    -webkit-transform:rotate(-90deg)!important; /* Safari and Chrome */
+    -o-transform:rotate(-90deg)!important; /* Opera */
+    float: left;
+    font-size: 50px;
+    margin-left: -10px;
+    margin-top: 50px;
+    position: relative;
+    left: 13px;
+
+}
+
 p{
     font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     margin-bottom: 20px;
@@ -97,13 +112,14 @@ h3{
     font-size: 29px;
 }
 
+
 /*header*/
 
 header{
     width: 100%;
     margin: 0 auto;
     position: fixed;
-    z-index: 100000;
+    z-index: 802;
 }
 
 .logo a{
@@ -178,8 +194,9 @@ ul.main-nav li a:hover{
 #container{
     width: 960px;
     margin: 0 auto;
-    padding: 10px;
-    padding-bottom: 300px;
+    padding: 50px;
+    background-color:#9ba2a8 ;
+    padding-bottom: 200px;
 }
 
 /*home*/
@@ -246,16 +263,114 @@ h3.drink-title{
     z-index: 800;
 }
 
-/*photos and vids*/
+/*recipie overlay*/
 
-.media-item{
+.recipie-overlay{
+    background-color: #fff;
+    height: 400px;
+}
+
+.recipie-overlay h3{
+    text-transform: uppercase;
+    background-color: #6ec14b;
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+ul.ingredient-list{
+    font-size: 14px;
+    margin: 10px 0 10px 20px;
+}
+
+.recipie{
+    float: right;
+    width: 300px;
+}
+
+
+
+.recipie p{
+    margin: 0 0 5px 0;
+}
+
+.recipie-image img{
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-top: 40px;
+}
+
+/*store locator*/
+
+.locator-banner{
     float: left;
     padding: 20px;
+    background-color: #6ec14b;
+    width: 106%;
+    margin-left: -49px;
+    margin-top: 40px;
 }
+
+.locator-banner h2{
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.store-locator-container{
+    width: 950px;
+    height: 480px;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    float: left;
+    background-image: url(images/locator_ph.png);
+}
+
+/*photos and vids*/
+
+.media-container{
+    float: left!important;
+    margin-top: 50px;
+    height: 900px;
+}
+
+.box{
+  float: left;
+  padding: 5px;
+}
+
+#media-contain{
+    clear: both;
+    width: 960px;
+    float: left;
+}
+
+/*process*/
+
+.process-descrip{
+    float: left;
+    margin-top: 30px;
+    margin-right: 300px;
+}
+
+
+
 
 /*page*/
 
-.page{
-    padding: 50px 0;
+.page {
+padding: 150px 0;
+display: inline-block;
+float: left;
 }
+
+
+.page:first-of-type{
+    padding-top:10px ;
+}
+
+
 

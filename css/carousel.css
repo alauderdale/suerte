@@ -1,0 +1,126 @@
+.jcarousel-skin-tango .jcarousel-container {
+
+    background: #F0F6F9;
+
+}
+
+.jcarousel-skin-tango img {
+
+    width: 80px;
+    height: auto;
+    opacity: .7;
+
+}
+
+.jcarousel-skin-tango img:hover {
+
+    opacity: 1;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 285px;
+    padding: 50px 40px 30px 40px;
+    height: 110px;
+}
+
+.jcarousel-skin-tango .jcarousel-container-vertical {
+    width: 75px;
+    height: 245px;
+    padding: 40px 20px;
+}
+
+
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  285px;
+    height: 175px;
+}
+
+
+.jcarousel-skin-tango .jcarousel-clip-vertical {
+    width:  75px;
+    height: 245px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 75px;
+    height: 75px;
+}
+
+
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 20px;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-list, .jcarousel-list-horizontal{
+    height: 200px!important;
+}
+
+.jcarousel-skin-tango .jcarousel-item-vertical {
+    margin-bottom: 10px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    position: absolute;
+    top: 90px;
+    right: 5px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(../images/next-horizontal.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 5px;
+    right: auto;
+    background-image: url(../images/prev-horizontal.png);
+}
+
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 90px;
+    left: 5px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(../images/prev-horizontal.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background-image: url(../images/next-horizontal.png);
+}
+
+
+

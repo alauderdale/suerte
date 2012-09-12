@@ -3,6 +3,20 @@
 <head>
   <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
   <script src="http://code.jquery.com/jquery-latest.js"></script>
+<!--  carousel-->
+  <script src="js/jquery.jcarousel.js"></script>
+  <!--
+    jCarousel skin stylesheet
+  -->
+  <link rel="stylesheet" type="text/css" href="css/carousel.css" />
+  <script type="text/javascript">
+  
+  jQuery(document).ready(function() {
+      jQuery('#mycarousel').jcarousel();
+      jQuery('#mycarousel2').jcarousel();
+  });
+  
+  </script>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Suerte Tequila</title>
 </head>
@@ -14,9 +28,9 @@
             </div>
             <ul class="main-nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Tequillas</a></li>
-                <li><a href="#">Store Locator</a></li>
-                <li><a href="#">Photos &amp; <br/> Videos</a></li>
+                <li><a href="#tequillas">Tequillas</a></li>
+                <li><a href="#store-locate">Store Locator</a></li>
+                <li><a href="#photos-vids">Photos &amp; <br/> Videos</a></li>
                 <li><a href="#">The Tequilla <br/> Process</a></li>
                 <li><a href="#">Press &amp;<br/> Awards</a></li>
             </ul>
@@ -38,7 +52,7 @@
             </div>
         </div><!--end page-->
         <div class="clearfix"></div>
-        <div class="page tequillas">
+        <div class="page tequillas" id="tequillas">
             <h1 class="title-tilt">Tequillas</h1>
             <div class="drink-container">
                 <div class="bottle reposado">
@@ -53,13 +67,70 @@
                              750ml, 40 Alc. by Volume
                          </p>
                     </div>
-                    <div class="recipies">
-                    </div><!--end recipies-->
+                    <p class="recipies">recipies:</p>
+                    <ul id="mycarousel" class="jcarousel-skin-tango">
+                      <li>
+                          <a href="#">
+                              <img src="images/marg.png"/>
+                          </a>
+                          <div class="recipie-title">
+                              <p>Frozen Margarita</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="images/marg.png"/>
+                          </a>
+                          <div class="recipie-title">
+                              <p>Frozen Margarita</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="images/marg.png"/>
+                          </a>
+                          <div class="recipie-title">
+                              <p>Frozen Margarita</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="images/marg.png"/>
+                          </a>
+                          <div class="recipie-title">
+                              <p>Frozen Margarita</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="images/marg.png"/>
+                          </a>
+                          <div class="recipie-title">
+                              <p>Frozen Margarita</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="images/marg.png"/>
+                          </a>
+                          <div class="recipie-title">
+                              <p>Frozen Margarita</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="images/marg.png"/>
+                          </a>
+                          <div class="recipie-title">
+                              <p>Frozen Margarita</p>
+                          </div>
+                      </li>
+                    </ul>
                 </div><!--end drink info container-->
             </div><!--end drink container-->
         </div><!--end page-->
         <div class="clearfix"></div>
-        <div class="page store-locate">
+        <div class="page store-locate" id="store-locate">
             <h1 class="title-tilt">Store Locator</h1>
             <div class="locator-banner">
                 <h2>Find Suerte Near You!</h2>
@@ -68,20 +139,17 @@
             </div>
         </div><!--end page-->
         <div class="clearfix"></div>
-        <div class="page store-locate">
+        <div class="page photos-videos" id="photos-vids">
             <h1 class="title-tilt">Photos &amp;<br> Videos</h1>
-            <div class="locator-banner">
-                <h2>Find Suerte Near You!</h2>
-                <div class="media-container">
-                    <div class="media-item">
-                        <img src="http://placekitten.com/g/200/300">
-                    </div>
-                    <div class="media-item">
-                        <img src="http://placekitten.com/g/200/300">
-                    </div>
-                    <div class="media-item">
-                        <img src="http://placekitten.com/g/200/300">
-                    </div>
+            <div class="media-container">
+                <div class="media-item">
+                    <img src="http://placekitten.com/g/200/300">
+                </div>
+                <div class="media-item">
+                    <img src="http://placekitten.com/g/200/300">
+                </div>
+                <div class="media-item">
+                    <img src="http://placekitten.com/g/200/300">
                 </div>
             </div>
         </div><!--end page-->

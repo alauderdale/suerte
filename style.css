@@ -1,0 +1,234 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit;}
+
+/*fonts*/
+
+@font-face {
+    font-family: 'patronmedium';
+    src: url('fonts/patron_medium_v1001-webfont.eot');
+    src: url('fonts/patron_medium_v1001-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/patron_medium_v1001-webfont.woff') format('woff'),
+         url('fonts/patron_medium_v1001-webfont.ttf') format('truetype'),
+         url('fonts/patron_medium_v1001-webfont.svg#patronmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*clearfix*/
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/*main*/
+
+body{
+  font-family: 'patronmedium';
+  background-color: #9ba2a8;
+}
+
+a{
+    text-decoration: none;
+}
+
+strong{
+    font-weight: bold;
+}
+
+
+
+/*type*/
+
+.title-tilt{
+    transform:rotate(-4deg);
+    -ms-transform:rotate(-4deg); /* IE 9 */
+    -moz-transform:rotate(-4deg); /* Firefox */
+    -webkit-transform:rotate(-4deg); /* Safari and Chrome */
+    -o-transform:rotate(-4deg); /* Opera */
+}
+
+.title-max-tilt{
+    transform:rotate(-10deg);
+    -ms-transform:rotate(-10deg); /* IE 9 */
+    -moz-transform:rotate(-10deg); /* Firefox */
+    -webkit-transform:rotate(-10deg); /* Safari and Chrome */
+    -o-transform:rotate(-10deg); /* Opera */
+}
+
+.mini-is{
+    font-size: 40px;
+    margin: -20px 0 0 146px;
+    float: left; 
+}
+
+.here{
+    margin: -70px 0 0 130px;
+    float: left;
+    
+}
+
+.luck{
+    font-size: 85px;
+}
+
+p{
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    margin-bottom: 20px;
+    line-height: 140%;
+    font-size: 14px;
+}
+
+h1{
+    font-size: 68px;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 29px;
+}
+
+/*header*/
+
+header{
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 100000;
+}
+
+.logo a{
+    display: block;
+    background-image: url(images/logo.png);
+    width: 153px;
+    height: 147px;
+    float: left;
+    margin-left: -153px;
+    position: relative;
+    left: 520px;
+    bottom: 36px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+}
+
+.logo a:hover{
+    bottom: 30px;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+}
+
+nav.main-nav-wrapper{
+    width: 900px;
+    margin: 0 auto;
+    height: 20px;
+    background-color: rgba(216,217,221,.9);
+    padding: 20px 30px 30px 30px;
+        box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+        float: ;
+}
+
+ul.main-nav{
+    list-style: none;
+}
+
+ul.main-nav li{
+    float: left;
+    margin-right: 40px;
+    text-transform: uppercase;
+    font-size: 11pt;
+}
+
+ul.main-nav li:nth-child(3){
+    margin-right: 270px;
+}
+
+ul.main-nav li:last-of-type{
+    margin-right: 0;
+}
+
+
+ul.main-nav li a{
+    color: #000;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+}
+
+ul.main-nav li a:hover{
+    color: #f26223;
+}
+
+/*container*/
+
+#container{
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/*home*/
+
+.home-descrip{
+    margin: 50px 240px 0 200px; 
+}
+
+/*tequilas*/
+
+.drink-container{
+    margin-top: 60px;
+    width: 100%;
+    float: left;
+}
+
+.bottle{
+    width: 250px;
+    height: 483px;
+    background-image: url(images/bottle.png);
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.drink-info-container{
+    width: 700px;
+    float: left;
+    margin-top: 150px;
+}
+
+.drink-descrip{
+    width: 250px;
+}
+
+.reposado h3 {
+    color: #f2631f!important;
+}
+
+h3.drink-title{
+    color: #fff;
+    background-color: #000;
+    padding: 3px 60px;
+    float: left;
+    margin-left: 117px;
+    margin-top: 69px;
+}
+
+/*page*/
+
+.page{
+    padding: 50px 0;
+}
+

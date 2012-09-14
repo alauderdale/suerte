@@ -8,9 +8,10 @@
 <!--  fancybox-->
   <script src="js/jquery.fancybox.js"></script>
   <script src="js/jquery.fancybox.pack.js"></script>
-  <script src="js/fancybox.config.js"></script>
 <!--  masonry-->
  <script src="js/jquery.masonry.js"></script>
+ <!-- smooth scroll-->
+  <script src="js/smoothscroll.js"></script>
 <!--  script config-->
  <script src="js/scripts.js"></script>
 <!--stylesheets-->
@@ -25,18 +26,20 @@
             <div class="logo">
                 <a href="#home"></a>
             </div>
-            <ul class="main-nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#tequillas">Tequillas</a></li>
-                <li><a href="#storelocate">Store Locator</a></li>
-                <li><a href="#photos-vids">Photos &amp; <br/> Videos</a></li>
-                <li><a href="#process">The Tequilla <br/> Process</a></li>
-                <li><a href="#">Press &amp;<br/> Awards</a></li>
-            </ul>
+            <div id="navigation">
+                <ul class="main-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tequillas</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Photos &amp; <br/> Videos</a></li>
+                    <li><a href="#">The Tequilla <br/> Process</a></li>
+                    <li><a href="#">Press &amp;<br/> Awards</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <div id="container">
-        <div id="home" class="clearfix">
+        <section id="home" class="clearfix section">
             <div class="page wrapped">
                 <h1 class=" title-max-tilt"><span class="luck">Luck</span> <br/><span class="mini-is">is</span><br/><span class="here"> here</span></h1>
                 <div class="clearfix"></div>
@@ -51,8 +54,8 @@
                 <div class="bottom-image"><!--end bottom image-->
                 </div>
             </div><!--end page-->
-        </div><!--end page-wrapper-->
-        <div id="tequillas" class="clearfix">
+        </section><!--end page-wrapper-->
+        <section id="tequillas" class="clearfix section">
             <div class="page wrapped">
                 <h1 class="title-tilt">Tequillas</h1>
                 <div class="drink-container">
@@ -122,8 +125,8 @@
                     </div><!--end drink info container-->
                 </div><!--end drink container-->
             </div><!--end page-->
-        </div><!--end page-wrapper-->
-        <div id="storelocate" class="clearfix">
+        </section> <!--end page-wrapper-->
+        <section id="storelocate" class="clearfix section">
             <div class="page wrapped" >
                 <h1 class="title-tilt">Store Locator</h1>
                 <div class="locator-banner">
@@ -132,8 +135,8 @@
                 <div class="store-locator-container">
                 </div>
             </div><!--end page-->
-        </div><!--end page-wrapper-->
-        <div id="photos-vids" class="clearfix">
+        </section> <!--end page-wrapper-->
+        <section id="photos-vids" class="clearfix section">
             <div class="page wrapped">
                 <h1 class="title-tilt">Photos &amp;<br> Videos</h1>
                 <div class="media-container" id="media-contain" class="clearfix">
@@ -154,8 +157,8 @@
                     </div>
                 </div><!--end media container-->
             </div><!--end page-->
-        </div><!--end page-wrapper-->
-        <div id="process" class="clearfix">
+        </section> <!--end page-wrapper-->
+        <section id="process" class="clearfix section">
             <div class="page wrapped">
                 <h1 class="title-tilt"><span class="the-word">The</span><span class="tequilla-word"> Tequilla</span><br> Process</h1>
                 <div class="process-descrip">
@@ -165,7 +168,7 @@
                     <p>Pellentesque feugiat ante sit amet augue mollis ut convallis justo tempus. Phasellus laoreet tincidunt neque venenatis scelerisque. Sed ut orci tempus leo malesuada varius non sit amet risus. Mauris pellentesque, lectus et ullamcorper rutrum, augue velit placerat lacus, sit amet malesuada mi mauris sed mi. Nam non ligula augue. Aliquam ut volutpat quam. Nam vehicula metus id ante semper in luctus ligula pretium. In hac habitasse platea dictumst. Integer sem libero, gravida id tempor malesuada, blandit et nibh. Integer nec hendrerit mi. Nullam dolor lorem, dictum vitae adipiscing nec, lobortis faucibus enim. Nullam auctor, nunc et vestibulum accumsan, elit nulla hendrerit elit, vel laoreet enim libero quis quam.</p>
                 </div>   
             </div><!--end page-->
-        </div><!--end page-wrapper-->
+        </section> <!--end page-wrapper-->
     </div> <!--end container-->
 </body>
 </html>

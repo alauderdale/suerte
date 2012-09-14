@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+// initiate page scroller plugin
+$('body').pageScroller({
+    
+	navigation: '#navigation'
+});
+
+
 ///fancybox
 
 $('.fancybox').fancybox();

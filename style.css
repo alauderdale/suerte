@@ -434,7 +434,12 @@ ul.ingredient-list{
     margin-right: 300px;
 }
 
-
+.process-slider{
+    background-image: url(images/process-slider-bg.png);
+    padding: 20px 20px 60px 40px;
+    float: left;
+    background-repeat: no-repeat;
+}
 
 
 /*sections*/
@@ -494,18 +499,29 @@ footer h1{
     background-color: #b2b2b2;
 }
 
+.social-bar p {
+    float: left;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.social-bar a{
+    color: #fff;
+}
+
 .social-bar .wrapped{
-    padding: 20px;
+    padding: 15px 10px;
 }
 
 ul.social-icons{
     float: right;
     list-style: none;
+    margin-top: 10px;
 }
 
 ul.social-icons li{
     float: left;
-    margin-left: 10px;
+    margin-left:10px;
 }
 
 ul.social-icons li a{

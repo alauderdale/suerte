@@ -35,6 +35,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body{
   font-family: 'patronmedium';
   background-color:#9ba2a8;
+  background-image: url(images/bg.png);
+  background-attachment: fixed;
 }
 
 a{
@@ -194,17 +196,20 @@ ul.main-nav li a:hover{
 
 /*container*/
 
+.center{
+    margin: 0 auto;
+    width: 960px;
+}
+
 .wrapped{
     margin: 0 auto;
     width: 960px;
-    padding: 50px;
+    padding: 20px 20px;
     display: block;
     position: relative;
 }
 
-#storelocate, #photos-vids, #tequillas, #home, #process{
 
-}
 
 /*home*/
 
@@ -213,7 +218,34 @@ ul.main-nav li a:hover{
     float: left;
 }
 
+.bottom-image{
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    height: 448px;
+    background-image: url(images/trees.png);
+    float: left;
+    position: fixed;
+    left:0px;
+       bottom:0px;
+}
+
+#bottom-image{
+    z-index: -9999;
+}
+
 /*tequilas*/
+
+.teq-arrow{
+    width: 292px;
+    height: 139px;
+    background-image: url(images/teq-arrow.png);
+    position: relative;
+    left: -90px;
+}
 
 .drink-container{
     margin-top: 60px;
@@ -245,14 +277,19 @@ ul.main-nav li a:hover{
     color: #f2631f!important;
 }
 
+
 h3.drink-title{
     color: #fff;
-    background-color: #000;
-    padding: 3px 60px;
+    padding: 13px 60px;
     float: left;
     margin-left: 117px;
     margin-top: 69px;
+    background-image: url(images/tequilla-title-bg.png);
+
+    background-position-x: -50px;
+
 }
+
 
 .recipie-title p{
     color: #000;
@@ -266,7 +303,7 @@ h3.drink-title{
 .recipies{
     font-size: 23px;
     position: relative;
-    top: 60px;
+    top: 71px;
     left: 20px;
     margin-top: -60px;
     z-index: 800;
@@ -314,14 +351,24 @@ ul.ingredient-list{
 
 /*store locator*/
 
+#storelocate{
+    background-image: url(images/locator-bg.png);
+    background-repeat: repeat-x;
+    background-position-y: 220px;
+}
+
+#storelocate h1{
+    margin-top: 40px;
+}
+
 .locator-banner{
     float: left;
-    padding: 20px;
-    background-color: #6ec14b;
-    width: 106%;
-    margin-left: -49px;
+    background-image: url(images/locator-input-bg.png);
+    background-repeat: repeat-x;
+    width: 100%;
     margin-top: 40px;
     float: left;
+    padding: 27px 0;
 }
 
 .locator-banner h2{
@@ -358,6 +405,27 @@ ul.ingredient-list{
     float: left;
 }
 
+.media-item img{
+    width: 200px;
+    height: auto;
+}
+
+.media-item{
+    opacity: .8;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+}
+
+.media-item:hover{
+    opacity: 1;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+}
+
 /*process*/
 
 .process-descrip{
@@ -368,7 +436,107 @@ ul.ingredient-list{
 
 
 
-/*page*/
+
+/*sections*/
+
+.section{
+    padding: 100px 0;
+}
+
+.section:first-of-type{
+margin-bottom: 150px;
+}
 
 
+/*footer*/
 
+footer{
+    background-color: #b2b2b2;
+    color: #fff;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+footer a{
+    color: #f26223;
+}
+
+footer a:hover{
+    color: #df4b0a;
+}
+
+.footer-col{
+    width: 270px;
+    float: left;
+    border-right: 1px solid #fff;
+    padding: 10px;
+    margin: 10px;
+    height: 120px;
+}
+
+.footer-col:last-of-type{
+   border-right: none;
+}
+
+footer h1{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/*social bar*/
+
+.social-bar{
+
+    background-image: url(images/social-bar-bg.png);
+    background-repeat: repeat-x;
+    background-color: #b2b2b2;
+}
+
+.social-bar .wrapped{
+    padding: 20px;
+}
+
+ul.social-icons{
+    float: right;
+    list-style: none;
+}
+
+ul.social-icons li{
+    float: left;
+    margin-left: 10px;
+}
+
+ul.social-icons li a{
+    float: left;
+    display: block;
+    opacity: .8;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+}
+
+ul.social-icons li a:hover{
+    opacity: 1;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+}
+
+.facebook, .twitter, .pintrist{
+    width: 56px;
+    height: 46px;
+}
+
+.facebook{
+    background-image: url(images/facebook.png);
+}
+.twitter{
+    background-image: url(images/twitter.png);
+}
+.pintrist{
+    background-image: url(images/pintrist.png);
+}

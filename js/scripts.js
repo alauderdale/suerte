@@ -9,7 +9,9 @@ $('body').pageScroller({
 
 ///fancybox
 
-$('.fancybox').fancybox();
+$('.fancybox').fancybox({
+
+});
 
   /// carousel
 
@@ -23,6 +25,38 @@ var $container = $('#media-contain');
     });
   });
   
+//slider
+
+$(window).load(function() {
+    $('#process-slider').nivoSlider({
+    ////options
+    effect: 'fade',
+    prevText: '', 
+    nextText: '',
+    controlNav: false
+    
+    });
+});
+
+
+
+///appearing image
+
+
+
+
+       $(window).scroll(function(){
+         var divOffset = $('#fade-bottom-image').offset();
+         if(window.scrollY > divOffset.top ){
+            $('#bottom-image').fadeOut(300);
+         }
+         if(window.scrollY < divOffset.top){
+            $('#bottom-image').fadeIn(300);
+         }
+      });
+
+
+
 
  
 });

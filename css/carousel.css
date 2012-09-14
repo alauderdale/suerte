@@ -1,6 +1,12 @@
+.jcarousel-skin-tango {
+    background-image: url(../images/recipie-bg.png);
+    background-repeat: no-repeat;
+}
+
 .jcarousel-skin-tango .jcarousel-container {
 
-    background: #F0F6F9;
+   
+
 
 }
 
@@ -29,7 +35,7 @@
 .jcarousel-skin-tango .jcarousel-container-horizontal {
     width: 285px;
     padding: 50px 40px 30px 40px;
-    height: 110px;
+    height: 131px;
 }
 
 .jcarousel-skin-tango .jcarousel-container-vertical {
@@ -66,6 +72,7 @@
 .jcarousel-skin-tango .jcarousel-item-horizontal {
 	margin-left: 0;
     margin-right: 20px;
+    
 }
 
 .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {

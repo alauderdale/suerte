@@ -34,7 +34,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 body{
   font-family: 'patronmedium';
-  background-color: black;
+  background-color:#9ba2a8;
 }
 
 a{
@@ -55,6 +55,7 @@ strong{
     -moz-transform:rotate(-4deg); /* Firefox */
     -webkit-transform:rotate(-4deg); /* Safari and Chrome */
     -o-transform:rotate(-4deg); /* Opera */
+    float: left;
 }
 
 .title-max-tilt{
@@ -63,6 +64,7 @@ strong{
     -moz-transform:rotate(-10deg); /* Firefox */
     -webkit-transform:rotate(-10deg); /* Safari and Chrome */
     -o-transform:rotate(-10deg); /* Opera */
+    float: left;
 }
 
 .mini-is{
@@ -120,6 +122,7 @@ header{
     margin: 0 auto;
     position: fixed;
     z-index: 802;
+    float: left;
 }
 
 .logo a{
@@ -153,12 +156,12 @@ nav.main-nav-wrapper{
     height: 20px;
     background-color: rgba(216,217,221,.9);
     padding: 20px 30px 30px 30px;
-        box-shadow: 0px 2px 4px rgba(0,0,0,.3);
-        float: ;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.3);
 }
 
 ul.main-nav{
     list-style: none;
+    float: left;
 }
 
 ul.main-nav li{
@@ -191,18 +194,23 @@ ul.main-nav li a:hover{
 
 /*container*/
 
-#container{
-    width: 960px;
+.wrapped{
     margin: 0 auto;
+    width: 960px;
     padding: 50px;
-    background-color:#9ba2a8 ;
-    padding-bottom: 200px;
+    display: block;
+    position: relative;
+}
+
+#storelocate, #photos-vids, #tequillas, #home, #process{
+
 }
 
 /*home*/
 
 .home-descrip{
     margin: 50px 240px 0 200px; 
+    float: left;
 }
 
 /*tequilas*/
@@ -230,6 +238,7 @@ ul.main-nav li a:hover{
 .drink-descrip{
     width: 250px;
     margin-left: 20px;
+    
 }
 
 .reposado h3 {
@@ -312,6 +321,7 @@ ul.ingredient-list{
     width: 106%;
     margin-left: -49px;
     margin-top: 40px;
+    float: left;
 }
 
 .locator-banner h2{
@@ -332,7 +342,7 @@ ul.ingredient-list{
 /*photos and vids*/
 
 .media-container{
-    float: left!important;
+    float: left;
     margin-top: 50px;
     height: 900px;
 }
@@ -358,19 +368,7 @@ ul.ingredient-list{
 
 
 
-
 /*page*/
-
-.page {
-padding: 150px 0;
-display: inline-block;
-float: left;
-}
-
-
-.page:first-of-type{
-    padding-top:10px ;
-}
 
 
 

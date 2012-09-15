@@ -88,30 +88,16 @@
      <div class="page wrapped">
          <h1 class="title-tilt">Photos &amp;<br> Videos</h1>
          <div class="media-container" id="media-contain" class="clearfix">
-             <div class="media-item box">
-                 <a class="fancybox" href="images/slider-demo.png" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/slider-demo.png" alt="" />
-                 </a>
-             </div>
-             <div class="media-item box">
-                 <a class="fancybox" href="images/slider-demo.png" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/slider-demo.png" alt="" />
-                 </a>
-             </div>
-             <div class="media-item box">
-                 <a class="fancybox" href="images/slider-demo.png" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/slider-demo.png" alt="" />
-                 </a>
-             </div>
-             <div class="media-item box">
-                 <a class="fancybox" href="images/slider-demo.png" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/slider-demo.png" alt="" />
-                 </a>
-             </div>
-             <div class="media-item box">
-                 <a class="fancybox" href="images/slider-demo.png" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/slider-demo.png" alt="" />
-                 </a>
-             </div>
-             <div class="media-item box">
-                 <a class="fancybox" href="images/slider-demo.png" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/slider-demo.png" alt="" />
-                 </a>
-             </div>
+             <?php
+             $medialoop = new WP_Query( array( 'post_type' => 'media') );
+              ?>
+             <?php while ( $medialoop->have_posts() ) : $medialoop->the_post(); ?>
+                 <div class="media-item box">
+                     <a class="fancybox fancybox.ajax" href="<?php the_permalink(); ?>" title="<?php the_title(); ?> ">
+                          <?php the_post_thumbnail(); ?> 
+                     </a>
+                 </div><!--end media item-->
+            <?php endwhile; ?>
          </div><!--end media container-->
      </div><!--end page-->
  </section> <!--end page-wrapper-->
@@ -121,22 +107,30 @@
          <div class="process-descrip">
              <p>Pellentesque feugiat ante sit amet augue mollis ut convallis justo tempus. Phasellus laoreet tincidunt neque venenatis scelerisque. Sed ut orci tempus leo malesuada varius non sit amet risus. Mauris pellentesque, lectus et ullamcorper rutrum, augue velit placerat lacus, sit amet malesuada mi mauris sed mi. Nam non ligula augue. Aliquam ut volutpat quam. Nam vehicula metus id ante semper in luctus ligula pretium. In hac habitasse platea dictumst. Integer sem libero, gravida id tempor malesuada, blandit et nibh. Integer nec hendrerit mi. Nullam dolor lorem, dictum vitae adipiscing nec, lobortis faucibus enim. Nullam auctor, nunc et vestibulum accumsan, elit nulla hendrerit elit, vel laoreet enim libero quis quam.</p>
          </div>   
-         <div class="process-slider">
-             <div class="slider-wrapper">
-                 <div id="process-slider" class="nivoSlider">
-                     <img src="images/slider-demo.png"  alt=""  title="#htmlcaption"  />
-                     <img src="images/slider-demo2.png"  alt=""  title="#htmlcaption2"  />
-                 </div>
-                 <div id="htmlcaption" class="nivo-html-caption">
-                     <h1>jalisco</h1>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut pretium libero. Integer ut nulla urna, non elementum lacus. Nullam egestas, magna a euismod pharetra, nibh ante imperdiet enim, ut adipiscing mi sem vitae nisl. Sed cursus ultricies malesuada. </p> 
-                 </div>
-                 <div id="htmlcaption2" class="nivo-html-caption">
-                     <h1>Whooooo</h1>
-                     <p>lor sit amet, consectetueuismod pharetra, nibh ante imperdiet enim, ut adipiscing mi sem vitae nisl. Sed cursus ultricies malesuada. </p> 
-                 </div>
-             </div>
-         </div><!--end process slider-->
+        <div class="process-slider">
+            <div class="slider-wrapper">
+                <div id="process-slider" class="nivoSlider">
+                    <?php
+                    $processloop = new WP_Query( array( 'post_type' => 'processslider') );
+                     ?>
+                     <?php while ( $processloop->have_posts() ) : $processloop->the_post(); ?>
+                        <img src="<?php
+                        $imgsrc2 = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "Full");
+                        echo $imgsrc2[0];
+                        ?>"  alt=""  title="#caption-<?php the_ID(); ?>"  />
+                     <?php endwhile; ?>
+                </div>
+                <?php
+                $processloop2 = new WP_Query( array( 'post_type' => 'processslider') );
+                 ?>
+                <?php while ( $processloop2->have_posts() ) : $processloop2->the_post(); ?>
+                <div id="caption-<?php the_ID(); ?>" class="nivo-html-caption">
+                    <h1><?php the_title(); ?></h1>
+                    <?php the_content(); ?> 
+                </div>
+                <?php endwhile; ?>
+            </div>
+        </div><!--end process slider-->
      </div><!--end page-->
  </section> <!--end page-wrapper-->
  <?php get_footer(); ?>

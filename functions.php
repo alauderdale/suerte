@@ -41,6 +41,31 @@ function create_my_post_types() {
 	
 			)
 		);
+		
+		register_post_type( 'media',
+				array(
+					'labels' => array(
+						'name' => __( 'Photos & Videos' ),
+						'singular_name' => __( 'media item' )
+					),
+					'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
+					'public' => true,
+		
+				)
+			);
+			
+			
+		register_post_type( 'processslider',
+				array(
+					'labels' => array(
+						'name' => __( 'Process Steps' ),
+						'singular_name' => __( 'process step' )
+					),
+					'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
+					'public' => true,
+		
+				)
+			);
 	
 
 

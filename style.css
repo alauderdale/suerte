@@ -339,6 +339,7 @@ h3.drink-title{
 
 .recipie-overlay{
     background-color: #fff;
+    width: 600px;
     height: 400px;
 }
 
@@ -346,9 +347,7 @@ h3.drink-title{
     text-transform: uppercase;
     background-color: #6ec14b;
     color: #fff;
-    padding: 5px;
     width: 100%;
-    float: left;
     margin-bottom: 20px;
 }
 
@@ -372,7 +371,6 @@ ul.ingredient-list{
     width: 200px;
     height: auto;
     float: left;
-    margin-top: 40px;
 }
 
 /*store locator*/

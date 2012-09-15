@@ -33,7 +33,7 @@
              <div class="drink-container">
                  <div class="bottle">
                      <h3 class="title-tilt drink-title"> <?php the_title(); ?></h3>
-                     <?php the_post_thumbnail( $size, $attr ); ?> 
+                     <?php the_post_thumbnail(); ?> 
                  </div><!--end bottle-->
                  <div class="drink-info-container">
                      <div class="drink-descrip">
@@ -47,54 +47,21 @@
                      </script>
                      <div class="drink-slider-container">
                          <ul id="drink-slider-<?php the_ID(); ?>" class="jcarousel-skin-tango">
-                           <li>
-                               <a class="fancybox fancybox.iframe" href="single-drink.html">
-                                   <img src="images/marg.png"/>
-                               </a>
-                               <div class="recipie-title">
-                                   <p>Frozen Margarita</p>
-                               </div>
-                           </li>
-                           <li>
-                               <a class="fancybox fancybox.iframe" href="single-drink.html">
-                                   <img src="images/marg.png"/>
-                               </a>
-                               <div class="recipie-title">
-                                   <p>Frozen Margarita</p>
-                               </div>
-                           </li>
-                           <li>
-                               <a class="fancybox fancybox.iframe" href="single-drink.html">
-                                   <img src="images/marg.png"/>
-                               </a>
-                               <div class="recipie-title">
-                                   <p>Frozen Margarita</p>
-                               </div>
-                           </li>
-                           <li>
-                               <a class="fancybox fancybox.iframe" href="single-drink.html">
-                                   <img src="images/marg.png"/>
-                               </a>
-                               <div class="recipie-title">
-                                   <p>Frozen Margarita</p>
-                               </div>
-                           </li>
-                           <li>
-                               <a class="fancybox fancybox.iframe" href="single-drink.html">
-                                   <img src="images/marg.png"/>
-                               </a>
-                               <div class="recipie-title">
-                                   <p>Frozen Margarita</p>
-                               </div>
-                           </li>
-                           <li>
-                               <a class="fancybox fancybox.iframe" href="single-drink.html">
-                                   <img src="images/marg.png"/>
-                               </a>
-                               <div class="recipie-title">
-                                   <p>Frozen Margarita</p>
-                               </div>
-                           </li>
+                         <!--         register custom post type for tequila-->
+                             <?php $meta = get_post_meta($post->ID, 'custom_text', true);?>
+                              <?php
+                              $recipieloop = new WP_Query( array( 'post_type' => 'recipie', 'recipiedrink' => $meta) );
+                               ?>
+                              <?php while ( $recipieloop->have_posts() ) : $recipieloop->the_post(); ?>
+                                   <li>
+                                       <a class="fancybox fancybox.ajax" href="<?php the_permalink(); ?>">
+                                           <?php the_post_thumbnail(); ?> 
+                                       </a>
+                                       <div class="recipie-title">
+                                           <p><?php the_title(); ?></p>
+                                       </div>
+                                   </li>
+                               <?php endwhile; ?>
                          </ul>
                      </div>
                  </div><!--end drink info container-->

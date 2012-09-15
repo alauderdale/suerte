@@ -15,7 +15,9 @@ $('.fancybox').fancybox({
 
   /// carousel
 
-jQuery('#drink-slider').jcarousel();
+///jQuery('#drink-slider').jcarousel();
+
+/// masonry
 
 var $container = $('#media-contain');
 

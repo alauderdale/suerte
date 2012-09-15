@@ -33,13 +33,7 @@
             </div>
             <div id="navigation">
                 <ul class="main-nav">
-                    <?php
-                         $pages = get_pages('sort_column=menu_order');
-                         foreach ($pages as $page) {
-                         	$link = '<li id="nav-'.$page->post_name.'"><a href="#">'.$page->post_title.'</a></li>';
-                        	echo $link;
-                         }
-                    ?>
+                     <?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) );   ?>
                 </ul>
             </div>
         </nav>

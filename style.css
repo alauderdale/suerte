@@ -134,6 +134,12 @@ h3{
 
 /*header*/
 
+/*wordpress menu*/
+
+ul.menu {
+    list-style: none;
+}
+
 header{
     width: 100%;
     margin: 0 auto;
@@ -271,9 +277,13 @@ ul.main-nav li a:hover{
 .bottle{
     width: 250px;
     height: 483px;
-    background-image: url(images/bottle.png);
     background-repeat: no-repeat;
     float: left;
+}
+
+.bottle img{
+    position: relative;
+    top: -100px;
 }
 
 .drink-info-container{
@@ -297,10 +307,11 @@ h3.drink-title{
     color: #fff;
     padding: 13px 60px;
     float: left;
-    margin-left: 117px;
+    margin-left: 100px;
     margin-top: 69px;
+    width: 400px;
     background-image: url(images/tequilla-title-bg.png);
-
+    background-repeat: no-repeat;
     background-position-x: -50px;
 
 }

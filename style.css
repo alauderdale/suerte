@@ -60,6 +60,44 @@ strong{
 }
 
 
+.enter-page{
+    margin-top: 40px;
+    width: 960px;
+    float: left;
+    text-align: center;
+}
+
+.enter-page a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.enter-page h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.enter-controls{
+    padding: 50px;
+}
+
+.enter-controls a{
+    margin: 20px;
+    color: #000;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.enter-descrip{
+    padding: 0 200px;
+}
+
+.enter-page p{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
 
 /*type*/
 
@@ -489,6 +527,22 @@ h3.drink-title{
     -o-transition-duration: .2s; /* Opera */
 }
 
+.media-overlay {
+    background-color: #000;
+}
+
+.media-overlay p{
+    margin: 0!important;
+    padding: 0!important;
+    font-size: 0!important;
+}
+
+.media-overlay img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
 /*process*/
 
 .process-descrip{
@@ -521,6 +575,7 @@ margin-bottom: 150px;
 footer{
     background-color: #000;
     color: #fff;
+    z-index: 700;
 }
 
 footer p{
@@ -643,6 +698,16 @@ ul.social-icons li a:hover{
 }
 
 /*plugin styling*/
+
+/*scroll to top*/
+
+a#scroll-to-top{
+    right: 359px!important;
+    width: 72px!important;
+    height: 72px!important;
+    background-image: url(images/scroll-bg.png)!important;
+    bottom: 300px!important;
+}
 
 
 /*map*/

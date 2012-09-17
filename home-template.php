@@ -100,7 +100,7 @@
               ?>
              <?php while ( $medialoop->have_posts() ) : $medialoop->the_post(); ?>
                  <div class="media-item box">
-                     <a class="fancybox fancybox.ajax" href="<?php the_permalink(); ?>" title="<?php the_title(); ?> ">
+                     <a class="fancybox fancybox.ajax" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                           <?php the_post_thumbnail(); ?> 
                      </a>
                  </div><!--end media item-->

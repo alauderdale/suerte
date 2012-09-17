@@ -4,6 +4,7 @@
  */ ?>
  
  <?php get_header(); ?>
+ <div id="rabbit"></div>
  <section id="home" class="clearfix section">
      <div class="page wrapped">
          <h1 class=" title-max-tilt"><span class="luck">Luck</span> <br/><span class="mini-is">is</span><br/><span class="here"> here</span></h1>
@@ -81,6 +82,12 @@
      </div>
      <div class="page wrapped" >
          <div class="store-locator-container">
+         <?php
+         $storelocateloop = new WP_Query( array( 'post_type' => 'storelocate') );
+          ?>
+         <?php while ( $storelocateloop->have_posts() ) : $storelocateloop->the_post(); ?>
+         <?php the_content(); ?>
+         <?php endwhile; ?>
          </div>
      </div><!--end page-->
  </section> <!--end page-wrapper-->

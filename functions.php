@@ -66,9 +66,19 @@ function create_my_post_types() {
 		
 				)
 			);
-	
-
-
+			
+            
+            register_post_type( 'storelocate',
+            		array(
+            			'labels' => array(
+            				'name' => __( 'Store Locator Container' ),
+            				'singular_name' => __( 'Store Locator Container' )
+            			),
+            			'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
+            			'public' => true,
+            
+            		)
+            	);
 }
 
 ///custom categories

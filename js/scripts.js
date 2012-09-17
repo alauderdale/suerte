@@ -10,7 +10,7 @@ $('body').pageScroller({
 ///fancybox
 
 $('.fancybox').fancybox({
-
+padding : 0
 });
 
   /// carousel
@@ -56,9 +56,27 @@ $(window).load(function() {
             $('#bottom-image').fadeIn(300);
          }
       });
+      
+//rabbit position
+
+$(function(){  // $(document).ready shorthand
+  $('#rabbit').fadeIn(50);
+});
 
 
 
 
- 
+$(window).resize(function(){
+     resizenow();
+});
+function resizenow() {
+    var browserwidth = $(window).width();
+    var browserheight = $(window).height();
+    $('#rabbit').css('left', ((browserwidth + 1500 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
+    
+};
+
+resizenow();
+
+      
 });

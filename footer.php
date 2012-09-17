@@ -24,14 +24,18 @@
     </footer>
     <div class="social-bar">
         <div class="wrapped clearfix">
-            <p>&copy; 2012 all right reserved Suerte Tequila             <a href="#">Terms of service</a></p>
+            <p>&copy; 2012 all right reserved Suerte Tequila             <a href="index.php?page_id=115" class="fancybox fancybox.ajax">Terms of service</a></p>
             <ul class="social-icons">
-                <li><a class="facebook" href="#"></a></li>
-                <li><a class="twitter" href="#"></a></li>
-                <li><a class="pintrist" href="#"></a></li>
+                <li><a class="facebook" target="_blank" href="http://www.facebook.com/suertetequila"></a></li>
+                <li><a class="twitter" target="_blank" href="https://twitter.com/#!/SuerteTequila"></a></li>
+                <li><a class="pintrist" target="_blank" href="https://pinterest.com/suertetequila/"></a></li>
             </ul>
         </div>
     </div>
 </body>
+<!--  carousel-->
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.jcarousel.js"></script>
+<!--  script config-->
+<script src="<?php bloginfo('template_url'); ?>/js/scripts.js"></script>
 <?php wp_footer(); ?>
 </html>

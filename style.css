@@ -7,9 +7,6 @@ Author URI: http://www.eternalcontrast.com
 */
 
 
-#wpadminbar{
-    display: none!important;
-}
 
 
 
@@ -131,6 +128,10 @@ h3{
     font-size: 29px;
 }
 
+h4{
+    font-size: 14px;
+}
+
 
 /*header*/
 
@@ -231,6 +232,34 @@ ul.main-nav li a:hover{
 }
 
 
+/*rabbit*/
+
+#rabbit{
+    position: fixed;
+    background-image: url(images/rabbit.png);
+    width: 776px;
+    height: 1173px;
+    opacity: .7;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+    display: block;
+    float: left;
+    z-index: 600;
+    display: none;
+}
+
+#rabbit:hover {
+    opacity: 1;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+    cursor: pointer;
+
+}
+
 
 /*home*/
 
@@ -251,7 +280,7 @@ ul.main-nav li a:hover{
     float: left;
     position: fixed;
     left:0px;
-       bottom:0px;
+       bottom:-70px;
 }
 
 #bottom-image{
@@ -312,7 +341,7 @@ h3.drink-title{
     width: 400px;
     background-image: url(images/tequilla-title-bg.png);
     background-repeat: no-repeat;
-    background-position-x: -50px;
+        background-position: -50px 0px;
 
 }
 
@@ -337,18 +366,31 @@ h3.drink-title{
 
 /*recipie overlay*/
 
+
+
+.recipie-inner {
+    padding: 20px;
+}
+
 .recipie-overlay{
     background-color: #fff;
     width: 600px;
     height: 400px;
+    border-radius: 100px;
+}
+
+.revipie-title-contain {
+    padding: 22px;
+    background-image: url(images/recipie-overlay-bg.png);
+    background-repeat: repeat-x;
+    margin-bottom: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 .recipie-overlay h3{
     text-transform: uppercase;
-    background-color: #6ec14b;
     color: #fff;
-    width: 100%;
-    margin-bottom: 20px;
 }
 
 .recipie-overlay ul{
@@ -376,9 +418,8 @@ h3.drink-title{
 /*store locator*/
 
 #storelocate{
-    background-image: url(images/locator-bg.png);
     background-repeat: repeat-x;
-    background-position-y: 220px;
+    z-index: 701;
 }
 
 #storelocate h1{
@@ -402,12 +443,7 @@ h3.drink-title{
 }
 
 .store-locator-container{
-    width: 950px;
-    height: 480px;
-    margin-top: 20px;
-    background-color: #f2f2f2;
-    float: left;
-    background-image: url(images/locator_ph.png);
+
 }
 
 /*photos and vids*/
@@ -420,12 +456,11 @@ h3.drink-title{
 
 .box{
   float: left;
-  padding: 5px;
 }
 
 #media-contain{
     clear: both;
-    width: 960px;
+    width: 760px;
     float: left;
 }
 
@@ -440,6 +475,10 @@ h3.drink-title{
     -moz-transition-duration: .2s; /* Firefox 4 */
     -webkit-transition-duration: .2s; /* Safari and Chrome */
     -o-transition-duration: .2s; /* Opera */
+    padding: 10px;
+    background-color: rgba(0,0,0 , 1);
+    margin: 5px;
+    border-radius:5px;
 }
 
 .media-item:hover{
@@ -469,7 +508,7 @@ h3.drink-title{
 /*sections*/
 
 .section{
-    padding: 100px 0;
+    padding: 110px 0;
 }
 
 .section:first-of-type{
@@ -480,7 +519,7 @@ margin-bottom: 150px;
 /*footer*/
 
 footer{
-    background-color: #b2b2b2;
+    background-color: #000;
     color: #fff;
 }
 
@@ -520,7 +559,7 @@ footer h1{
 
     background-image: url(images/social-bar-bg.png);
     background-repeat: repeat-x;
-    background-color: #b2b2b2;
+    background-color: #000;
 }
 
 .social-bar p {
@@ -541,6 +580,7 @@ ul.social-icons{
     float: right;
     list-style: none;
     margin-top: 10px;
+    margin-right: 100px;
 }
 
 ul.social-icons li{
@@ -551,7 +591,7 @@ ul.social-icons li{
 ul.social-icons li a{
     float: left;
     display: block;
-    opacity: .8;
+    opacity: .6;
     transition-duration: .2s;
     -moz-transition-duration: .2s; /* Firefox 4 */
     -webkit-transition-duration: .2s; /* Safari and Chrome */
@@ -579,4 +619,102 @@ ul.social-icons li a:hover{
 }
 .pintrist{
     background-image: url(images/pintrist.png);
+}
+
+
+/*temrs*/
+
+.terms{
+    width: 700px;
+    height: 500px;
+    background: #fff;
+    padding: 10px;
+    
+}
+
+.terms h3{
+    padding-bottom: 20px;
+}
+
+
+.terms p{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*plugin styling*/
+
+
+/*map*/
+
+#location_search_submit_field{
+    position: relative;
+    left: 328px;
+    top: -70px;
+    width: 100px;
+    height: 80px;
+    border: none;
+    background: #9cf;
+    background-image: url(images/go_button.png);
+    cursor: pointer;
+    text-indent: -999999999px;
+}
+
+.location_search{
+    position: relative;
+    top: 121px;
+}
+
+#location_search_zip_field {
+    width: 300px;
+    height: 40px;
+    font-size: 18pt;
+    padding-left: 10px;
+}
+
+#location_search_0_tr, .location_search_title, #location_search_2_tr {
+    display: none!important;
+}
+
+#results{
+    background-color: #fff;
+    padding: 0!important;
+    width: 360px!important;
+    overflow: scroll;
+    position: relative;
+    bottom: 380px;
+    height: 440px;
+    left: 570px;
+}
+
+.result{
+    padding: 10px 10px!important;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+}
+
+.result:hover{
+    background-color: #eee!important;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+}
+
+.result h3{
+    font-size: 12pt!important;
+}
+
+.store-locator-container{
+    height: 750px!important;
+    background-image: url(images/store_locator_bg.png);
+    background-repeat: no-repeat;
+    background-position: 0px 258px;
+}
+
+#simplemap{
+    top: 62px;
+    left: 31px;
 }

@@ -5,16 +5,14 @@
         <?php wp_title(''); ?> <?php bloginfo('name'); ?>
     </title>
     <!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
-    <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="screen" /> 
     <!--external stylesheets-->
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/carousel.css" />
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/jquery.fancybox.css" />
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/nivo-slider.css" />
+    <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="screen" /> 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <!--  slider -->
     <script src="<?php bloginfo('template_url'); ?>/js/jquery.nivo.slider.js"></script>
-    <!--  carousel-->
-    <script src="<?php bloginfo('template_url'); ?>/js/jquery.jcarousel.js"></script>
     <!--  fancybox-->
     <script src="<?php bloginfo('template_url'); ?>/js/jquery.fancybox.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/jquery.fancybox.pack.js"></script>
@@ -22,8 +20,7 @@
     <script src="<?php bloginfo('template_url'); ?>/js/jquery.masonry.js"></script>
     <!-- smooth scroll-->
     <script src="<?php bloginfo('template_url'); ?>/js/smoothscroll.js"></script>
-    <!--  script config-->
-    <script src="<?php bloginfo('template_url'); ?>/js/scripts.js"></script>
+  <?php wp_head(); ?>
 </head>
 <body>
     <header>

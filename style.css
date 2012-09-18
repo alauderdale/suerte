@@ -196,7 +196,7 @@ header{
     margin-left: -153px;
     position: relative;
     left: 520px;
-    bottom: 36px;
+    bottom: 22px;
     box-shadow: 0px 2px 4px rgba(0,0,0,.3);
     transition-duration: .2s;
     -moz-transition-duration: .2s; /* Firefox 4 */
@@ -205,7 +205,7 @@ header{
 }
 
 .logo a:hover{
-    bottom: 30px;
+    bottom: 20px;
     transition-duration: .2s;
     -moz-transition-duration: .2s; /* Firefox 4 */
     -webkit-transition-duration: .2s; /* Safari and Chrome */
@@ -252,6 +252,7 @@ ul.main-nav li a{
 
 ul.main-nav li a:hover{
     color: #f26223;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 
 /*container*/
@@ -284,7 +285,7 @@ ul.main-nav li a:hover{
     -o-transition-duration: .2s; /* Opera */
     display: block;
     float: left;
-    z-index: 600;
+    z-index: 7000;
     display: none;
 }
 
@@ -308,15 +309,10 @@ ul.main-nav li a:hover{
 
 .bottom-image{
     width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     
     height: 448px;
     background-image: url(images/trees.png);
     float: left;
-    position: fixed;
     left:0px;
        bottom:-70px;
 }
@@ -572,6 +568,22 @@ margin-bottom: 150px;
 
 /*footer*/
 
+#footer-head{
+    background-image: url(images/footer_head.png);
+    background-repeat: repeat-x;
+    height: 56px; 
+}
+
+#agave-bush{
+    background-image: url(images/agave_bush.png);
+    width: 131px;
+    height: 87px;
+    position: relative;
+    left: 100px;
+    bottom: -25px;
+    
+}
+
 footer{
     background-color: #000;
     color: #fff;
@@ -680,11 +692,10 @@ ul.social-icons li a:hover{
 /*temrs*/
 
 .terms{
-    width: 700px;
-    height: 500px;
-    background: #fff;
+    width: 754px;
+    height: 520px;
+    background: #fff!important;
     padding: 10px;
-    
 }
 
 .terms h3{
@@ -714,7 +725,7 @@ a#scroll-to-top{
 
 #location_search_submit_field{
     position: relative;
-    left: 328px;
+    left: 208px;
     top: -70px;
     width: 100px;
     height: 80px;
@@ -731,7 +742,7 @@ a#scroll-to-top{
 }
 
 #location_search_zip_field {
-    width: 300px;
+    width: 200px;
     height: 40px;
     font-size: 18pt;
     padding-left: 10px;
@@ -749,7 +760,7 @@ a#scroll-to-top{
     position: relative;
     bottom: 380px;
     height: 440px;
-    left: 570px;
+    left: 431px;
 }
 
 .result{

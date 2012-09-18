@@ -31,7 +31,12 @@
             </div>
             <div id="navigation">
                 <ul class="main-nav">
-                     <?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) );   ?>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tequilas</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Photos &amp; <br/> Videos</a></li>
+                    <li><a href="#">The Tequilla <br/> Process</a></li>
+                    <li><a href="#">Press &amp;<br/> Awards</a></li>
                 </ul>
             </div>
         </nav>

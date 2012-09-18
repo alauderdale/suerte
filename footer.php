@@ -1,4 +1,7 @@
     </div> <!--end container-->
+    <div id="agave-bush"></div>
+    <div id="footer-head">
+    </div>
     <footer>
         <div class="wrapped clearfix">
             <div class="footer-col">

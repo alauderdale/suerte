@@ -47,15 +47,15 @@ $(window).load(function() {
 
 
 
-       $(window).scroll(function(){
-         var divOffset = $('#fade-bottom-image').offset();
-         if(window.scrollY > divOffset.top ){
-            $('#bottom-image').fadeOut(300);
-         }
-         if(window.scrollY < divOffset.top){
-            $('#bottom-image').fadeIn(300);
-         }
-      });
+//       $(window).scroll(function(){
+//         var divOffset = $('#fade-bottom-image').offset();
+//         if(window.scrollY > divOffset.top ){
+//            $('#bottom-image').fadeOut(300);
+//         }
+//         if(window.scrollY < divOffset.top){
+//            $('#bottom-image').fadeIn(300);
+//         }
+//      });
       
 //rabbit position
 

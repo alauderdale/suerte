@@ -78,5 +78,10 @@ function resizenow() {
 
 resizenow();
 
+//video image
+
+
+$('.video').append('<div class="video-img"></div>');
+
       
 });

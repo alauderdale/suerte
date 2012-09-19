@@ -94,6 +94,17 @@ function create_my_post_types() {
  			'rewrite' => array( 'slug' => '?recipie=' ),	// pretty permalinks for your taxonomy?
  		)
  	);
+ 	
+ 	register_taxonomy(
+ 		'mediatype',		// internal name = machine-readable taxonomy name
+ 		'media',		// object type = post, page, link, or custom post-type
+ 		array(
+ 			'hierarchical' => true,
+ 			'label' => 'media type',	// the human-readable taxonomy name
+ 			'query_var' => true,	// enable taxonomy-specific querying
+ 			'rewrite' => array( 'slug' => '?media=' ),	// pretty permalinks for your taxonomy?
+ 		)
+ 	);
  }
 
  add_action('init', 'my_custom_taxonomies', 0);

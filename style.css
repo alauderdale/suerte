@@ -224,6 +224,7 @@ nav.main-nav-wrapper{
 ul.main-nav{
     list-style: none;
     float: left;
+    text-align: center;
 }
 
 ul.main-nav li{
@@ -539,6 +540,16 @@ h3.drink-title{
     overflow: hidden;
 }
 
+.video-img{
+    width: 76px;
+    height: 78px;
+    background-image: url(images/video_img.png);
+    position: relative;
+    top: -100px;
+    left: 63px;
+    margin-bottom: -80px;
+}
+
 /*process*/
 
 .process-descrip{
@@ -691,10 +702,10 @@ ul.social-icons li a:hover{
 
 /*temrs*/
 
+
 .terms{
-    width: 754px;
-    height: 520px;
-    background: #fff!important;
+    width: 760px;
+    height: 510px;
     padding: 10px;
 }
 

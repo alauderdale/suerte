@@ -523,7 +523,6 @@ h1.locator-title{
     width: 536px;
     height: 99px;
     background-image: url(images/locator_title.png);
-    float: left;
 }
 
 #storelocate{
@@ -954,7 +953,7 @@ a#scroll-to-top{
     width: 270px!important;
     overflow: scroll;
     position: relative;
-    bottom: 305px;
+    bottom: 401px;
     height: 440px;
     left: 431px;
 }
@@ -987,15 +986,26 @@ a#scroll-to-top{
     height: 850px!important;
     background-image: url(images/store_locator_bg.png);
     background-repeat: no-repeat;
-    background-position: 0px 365px;
+    background-position: 0px 18px;
+    float: left;
+    margin-top: 100px;
+    margin-bottom: -342px;
+    width: 800px;
 }
 
 .store-locator-container-outter {
 }
 
+#map_search{
+    float: left;
+    position: relative;
+    top: -347px;
+    left: 537px;
+}
+
 #simplemap{
-    top: 136px;
-    left: 31px;
+    left: -132px;
+    top: 40px;
 }
 
 #no-store{

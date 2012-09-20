@@ -119,20 +119,10 @@ strong{
     float: left;
 }
 
-.mini-is{
-    font-size: 40px;
-    margin: -20px 0 0 146px;
-    float: left; 
-}
-
-.here{
-    margin: -70px 0 0 130px;
-    float: left;
-    
-}
-
-.luck{
-    font-size: 85px;
+h1.luck-title{
+    width: 482px;
+    height: 222px;
+    background-image: url(images/luch_title.png);
 }
 
 .the-word {
@@ -190,14 +180,14 @@ header{
 .logo a{
     display: block;
     background-image: url(images/logo.png);
-    width: 153px;
-    height: 147px;
+    width: 155px;
+    height: 156px;
     float: left;
     margin-left: -153px;
     position: relative;
     left: 520px;
     bottom: 22px;
-    box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+    box-shadow: 0px 4px 5px rgba(0,0,0,.5);
     transition-duration: .2s;
     -moz-transition-duration: .2s; /* Firefox 4 */
     -webkit-transition-duration: .2s; /* Safari and Chrome */
@@ -279,19 +269,19 @@ ul.main-nav li a:hover{
     background-image: url(images/rabbit.png);
     width: 776px;
     height: 1173px;
-    opacity: .7;
+    opacity: 1;
     transition-duration: .2s;
     -moz-transition-duration: .2s; /* Firefox 4 */
     -webkit-transition-duration: .2s; /* Safari and Chrome */
     -o-transition-duration: .2s; /* Opera */
     display: block;
     float: left;
-    z-index: 7000;
+    z-index: 702;
     display: none;
 }
 
 #rabbit:hover {
-    opacity: 1;
+    opacity: .7;
     transition-duration: .2s;
     -moz-transition-duration: .2s; /* Firefox 4 */
     -webkit-transition-duration: .2s; /* Safari and Chrome */
@@ -308,14 +298,17 @@ ul.main-nav li a:hover{
     float: left;
 }
 
-.bottom-image{
-    width: 100%;
-    
-    height: 448px;
-    background-image: url(images/trees.png);
+.bottom-image-contain{
     float: left;
     left:0px;
-       bottom:-70px;
+    bottom:-70px;
+    width: 100%;
+    height: 448px;
+}
+
+.bottom-image{
+    background-image: url(images/trees.png);
+    height: 448px;
 }
 
 #bottom-image{
@@ -323,6 +316,12 @@ ul.main-nav li a:hover{
 }
 
 /*tequilas*/
+
+h1.tequillas-title{
+    width: 369px;
+    height: 98px;
+    background-image: url(images/tequillas_title.png);
+}
 
 .teq-arrow{
     width: 292px;
@@ -390,6 +389,14 @@ h3.drink-title{
     font-weight: bold;
 }
 
+.recipie-title a{
+    color: #000;
+}
+
+.recipie-title a:hover{
+    color: #67b130;
+}
+
 .recipies{
     font-size: 23px;
     position: relative;
@@ -452,13 +459,21 @@ h3.drink-title{
 
 /*store locator*/
 
+h1.locator-title{
+    width: 536px;
+    height: 99px;
+    background-image: url(images/locator_title.png);
+    float: left;
+}
+
 #storelocate{
     background-repeat: repeat-x;
     z-index: 701;
+    background-image: url(images/locator-bg.png);
 }
 
 #storelocate h1{
-    margin-top: 40px;
+    margin-top: 49px;
 }
 
 .locator-banner{
@@ -482,6 +497,12 @@ h3.drink-title{
 }
 
 /*photos and vids*/
+
+h1.photos-title {
+    width: 529px;
+    height: 138px;
+    background-image: url(images/photos_title.png);
+}
 
 .media-container{
     float: left;
@@ -510,8 +531,8 @@ h3.drink-title{
     -moz-transition-duration: .2s; /* Firefox 4 */
     -webkit-transition-duration: .2s; /* Safari and Chrome */
     -o-transition-duration: .2s; /* Opera */
-    padding: 10px;
-    background-color: rgba(0,0,0 , 1);
+    padding: 5px;
+    background-color: rgba(193,153,118 , .4);
     margin: 5px;
     border-radius:5px;
 }
@@ -552,6 +573,12 @@ h3.drink-title{
 
 /*process*/
 
+h1.process-title{
+    width: 398px;
+    height: 167px;
+    background-image: url(images/process_title.png);
+}
+
 .process-descrip{
     float: left;
     margin-top: 30px;
@@ -563,6 +590,8 @@ h3.drink-title{
     padding: 20px 20px 60px 40px;
     float: left;
     background-repeat: no-repeat;
+    position: relative;
+    right: 31px;
 }
 
 
@@ -642,7 +671,7 @@ footer h1{
 
 .social-bar p {
     float: left;
-    margin-top: 30px;
+    margin-top: 22px;
     margin-right: 10px;
 }
 
@@ -651,7 +680,7 @@ footer h1{
 }
 
 .social-bar .wrapped{
-    padding: 15px 10px;
+    padding: 0px 10px;
 }
 
 ul.social-icons{
@@ -669,7 +698,7 @@ ul.social-icons li{
 ul.social-icons li a{
     float: left;
     display: block;
-    opacity: .6;
+    opacity: 1;
     transition-duration: .2s;
     -moz-transition-duration: .2s; /* Firefox 4 */
     -webkit-transition-duration: .2s; /* Safari and Chrome */
@@ -677,7 +706,7 @@ ul.social-icons li a{
 }
 
 ul.social-icons li a:hover{
-    opacity: 1;
+    opacity: .6;
     transition-duration: .2s;
     -moz-transition-duration: .2s; /* Firefox 4 */
     -webkit-transition-duration: .2s; /* Safari and Chrome */
@@ -731,17 +760,44 @@ a#scroll-to-top{
     bottom: 300px!important;
 }
 
+/*newsletter*/
+
+.newsletter-contain th{
+    display: none;
+}
+
+.newsletter-contain tr{
+    float: left;
+}
+
+.newsletter-contain input[type="text"]{
+    width: 186px;
+    height: 27px;
+}
+
+.newsletter-contain input[type="submit"]{
+    width: 47px;
+    height: 50px;
+    float: left;
+    background: none;
+    border: none;
+    background-image: url(images/newsletter_go.png);
+    position: relative;
+    top: -8px;
+    cursor: pointer;
+}
+
 
 /*map*/
 
 #location_search_submit_field{
     position: relative;
-    left: 208px;
-    top: -70px;
-    width: 100px;
+    left: 198px;
+    top: -40px;
+    width: 88px;
     height: 80px;
     border: none;
-    background: #9cf;
+    background: none;
     background-image: url(images/go_button.png);
     cursor: pointer;
     text-indent: -999999999px;
@@ -757,6 +813,9 @@ a#scroll-to-top{
     height: 40px;
     font-size: 18pt;
     padding-left: 10px;
+    position: relative;
+    top: 30px;
+    right: 27px;
 }
 
 #location_search_0_tr, .location_search_title, #location_search_2_tr {
@@ -769,7 +828,7 @@ a#scroll-to-top{
     width: 360px!important;
     overflow: scroll;
     position: relative;
-    bottom: 380px;
+    bottom: 410px;
     height: 440px;
     left: 431px;
 }
@@ -802,6 +861,6 @@ a#scroll-to-top{
 }
 
 #simplemap{
-    top: 62px;
+    top: 32px;
     left: 31px;
 }

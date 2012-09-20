@@ -6,7 +6,11 @@
         <div class="wrapped clearfix">
             <div class="footer-col">
                 <h1>Keep in Touch</h1>
-                <p>newsletter comming soon!</p>
+                <p>If you'd like to receive updates on our progress, 
+                please enter your email address below.</p>
+                <div class="newsletter-contain">
+                    <?php echo do_shortcode('[newsletter]'); ?>
+                </div>
             </div>
             <div class="footer-col">
                 <h1>Contact Us</h1>

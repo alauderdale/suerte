@@ -140,6 +140,13 @@ function create_my_post_types() {
      'desc'  => 'Enter the recipie tequilla slug you would like to pull in for this tequilla',
      'id'  => $prefix.'text',
      'type'  => 'text'
+   ) ,
+   
+   array(
+     'label'=> 'Title Color',
+     'desc'  => 'Enter the hex color here ex: #000000',
+     'id'  => $prefix.'text2',
+     'type'  => 'text'
    )
  
  );

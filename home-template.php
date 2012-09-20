@@ -6,8 +6,8 @@
  <?php get_header(); ?>
  <div id="rabbit"></div>
  <section id="home" class="clearfix section">
+     <h1 class="luck-title" id="luck"></h1>
      <div class="page wrapped">
-         <h1 class=" title-max-tilt"><span class="luck">Luck</span> <br/><span class="mini-is">is</span><br/><span class="here"> here</span></h1>
          <div class="clearfix"></div>
          <div class="home-descrip" id="fade-bottom-image">
              <!--start the loop-->
@@ -19,13 +19,15 @@
              <?php endif; ?>
          </div>
      </div><!--end page-->
-     <div class="bottom-image" id="bottom-image"><!--end bottom image-->
+     <div class="bottom-image-contain">
+         <div class="bottom-image" id="bottom-image"><!--end bottom image-->
+         </div>
      </div>
  </section><!--end page-wrapper-->
  <section id="tequillas" class="clearfix section">
      <div class="page wrapped">
          <div class="teq-arrow"></div>
-         <h1 class="title-tilt">Tequilas</h1>
+         <h1 class="tequillas-title"></h1>
 <!--         register custom post type for tequila-->
          <?php
          $tequilaloop = new WP_Query( array( 'post_type' => 'tequila') );
@@ -33,7 +35,8 @@
          <?php while ( $tequilaloop->have_posts() ) : $tequilaloop->the_post(); ?>
              <div class="drink-container">
                  <div class="bottle">
-                     <h3 class="title-tilt drink-title"> <?php the_title(); ?></h3>
+                     <?php $meta2 = get_post_meta($post->ID, 'custom_text2', true);?>
+                     <h3 style="color:<?php echo $meta2 ?>;" class="title-tilt drink-title"> <?php the_title(); ?></h3>
                      <?php the_post_thumbnail(); ?> 
                  </div><!--end bottle-->
                  <div class="drink-info-container">
@@ -59,7 +62,7 @@
                                            <?php the_post_thumbnail(); ?> 
                                        </a>
                                        <div class="recipie-title">
-                                           <p><?php the_title(); ?></p>
+                                           <p><a class="fancybox fancybox.ajax" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
                                        </div>
                                    </li>
                                <?php endwhile; ?>
@@ -73,7 +76,7 @@
  </section> <!--end page-wrapper-->
  <section id="storelocate" class="clearfix section">
      <div class="wrapped">
-     <h1 class="title-tilt ">Store Locator</h1>
+     <h1 class="locator-title"></h1>
      </div>
      <div class="locator-banner">
          <div class="center">
@@ -93,7 +96,7 @@
  </section> <!--end page-wrapper-->
  <section id="photos-vids" class="clearfix section">
      <div class="page wrapped">
-         <h1 class="title-tilt">Photos &amp;<br> Videos</h1>
+         <h1 class="photos-title"></h1>
          <div class="media-container" id="media-contain" class="clearfix">
              <?php
              $medialoop = new WP_Query( array( 'post_type' => 'media') );
@@ -113,7 +116,7 @@
  </section> <!--end page-wrapper-->
  <section id="process" class="clearfix section">
      <div class="page wrapped">
-         <h1 class="title-tilt"><span class="the-word">The</span><span class="tequilla-word"> Tequilla</span><br> Process</h1>
+         <h1 class="process-title"></h1>
          <div class="process-descrip">
              <p>Pellentesque feugiat ante sit amet augue mollis ut convallis justo tempus. Phasellus laoreet tincidunt neque venenatis scelerisque. Sed ut orci tempus leo malesuada varius non sit amet risus. Mauris pellentesque, lectus et ullamcorper rutrum, augue velit placerat lacus, sit amet malesuada mi mauris sed mi. Nam non ligula augue. Aliquam ut volutpat quam. Nam vehicula metus id ante semper in luctus ligula pretium. In hac habitasse platea dictumst. Integer sem libero, gravida id tempor malesuada, blandit et nibh. Integer nec hendrerit mi. Nullam dolor lorem, dictum vitae adipiscing nec, lobortis faucibus enim. Nullam auctor, nunc et vestibulum accumsan, elit nulla hendrerit elit, vel laoreet enim libero quis quam.</p>
          </div>   

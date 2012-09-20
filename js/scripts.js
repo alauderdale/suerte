@@ -47,15 +47,17 @@ $(window).load(function() {
 
 
 
-//       $(window).scroll(function(){
-//         var divOffset = $('#fade-bottom-image').offset();
-//         if(window.scrollY > divOffset.top ){
-//            $('#bottom-image').fadeOut(300);
-//         }
-//         if(window.scrollY < divOffset.top){
-//            $('#bottom-image').fadeIn(300);
-//         }
-//      });
+       $(window).scroll(function(){
+         var divOffset = $('#luck').offset();
+         if(window.scrollY > divOffset.top ){
+            $('#bottom-image').fadeOut(300);
+         }
+         if(window.scrollY < divOffset.top){
+            $('#bottom-image').fadeIn(300);
+         }
+      });
+      
+      
       
 //rabbit position
 
@@ -69,14 +71,32 @@ $(function(){  // $(document).ready shorthand
 $(window).resize(function(){
      resizenow();
 });
+
+
 function resizenow() {
     var browserwidth = $(window).width();
     var browserheight = $(window).height();
     $('#rabbit').css('left', ((browserwidth + 1500 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
     
+    
+    $('#rabbit').mouseover(function(){
+    
+    	$('#rabbit').css('left', ((browserwidth + 1470 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
+    
+    });
+    
+    $('#rabbit').mouseout(function(){
+    
+    	$('#rabbit').css('left', ((browserwidth + 1500 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
+    
+    });
+    
 };
 
+
 resizenow();
+
+
 
 //video image
 

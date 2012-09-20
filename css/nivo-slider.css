@@ -12,7 +12,6 @@
 	position:relative;
 	width:600px;
 	height:auto;
-	overflow: hidden;
 }
 .nivoSlider img {
 	position:absolute;
@@ -101,13 +100,13 @@
 	cursor:pointer;
 }
 .nivo-prevNav {
-	left:0px;
+	left:-59px;
 	width: 109px;
 	height: 112px;
 	background-image: url(../images/slider-prev.png);
 }
 .nivo-nextNav {
-	right:0px;
+	right:-59px;
 	width: 109px;
 	height: 112px;
 	background-image: url(../images/slider-next.png);

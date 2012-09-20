@@ -123,6 +123,7 @@ h1.luck-title{
     width: 482px;
     height: 222px;
     background-image: url(images/luch_title.png);
+    margin-top: -30px;
 }
 
 .the-word {
@@ -293,8 +294,14 @@ ul.main-nav li a:hover{
 
 /*home*/
 
+
+
+.home-inner{
+    padding-left: 79px;
+}
+
 .home-descrip{
-    margin: 50px 240px 0 200px; 
+    margin: 2px 304px 20px 0px; 
     float: left;
 }
 
@@ -304,6 +311,7 @@ ul.main-nav li a:hover{
     bottom:-70px;
     width: 100%;
     height: 448px;
+    margin-top: -154px;
 }
 
 .bottom-image{
@@ -313,6 +321,56 @@ ul.main-nav li a:hover{
 
 #bottom-image{
     z-index: -9999;
+}
+
+/*people*/
+
+.home-col{
+    float: left;
+    width: 25%;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+h2.people-title{
+    width: 163px;
+    height: 43px;
+    background-image: url(images/people_title.png);
+}
+
+.people-contain{
+    padding-top: 20px;
+}
+
+.person{
+    float: left;
+    padding: 7px 10px;
+    margin-right: 20px;
+    width: 52px;
+    height: 52px;
+    background-image: url(images/avatar_bg.png);
+    background-repeat: no-repeat;
+}
+
+.person img{
+    width: 52px;
+    height: 52px;
+}
+
+/*home like*/
+
+h2.home-like-title{
+    text-transform: uppercase;
+    font-size: 16pt;
+    margin-top: -5px;
+}
+
+/*overlay*/
+
+.person-overlay{
+    width: 600px;
+    height: 600px;
+    padding: 20px;
 }
 
 /*tequilas*/
@@ -492,9 +550,7 @@ h1.locator-title{
     text-transform: uppercase;
 }
 
-.store-locator-container{
 
-}
 
 /*photos and vids*/
 
@@ -594,6 +650,27 @@ h1.process-title{
     right: 31px;
 }
 
+/*press*/
+
+.orange-bar{
+    height: 95px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-image: url(images/orange_bar_bg.png);
+    padding: 15px 0;
+    background-repeat: repeat-x;
+    text-transform: uppercase;
+}
+
+.orange-bar h1{
+    font-size: 28pt;
+}
+
+.orange-bar h2{
+    font-size: 16pt;
+}
+
 
 /*sections*/
 
@@ -690,9 +767,18 @@ ul.social-icons{
     margin-right: 100px;
 }
 
+ul.home-icons{
+    float: left;
+    margin-right: 0;
+}
+
 ul.social-icons li{
     float: left;
     margin-left:10px;
+}
+
+ul.social-icons li:first-of-type{
+    margin-left: 0;
 }
 
 ul.social-icons li a{
@@ -713,9 +799,10 @@ ul.social-icons li a:hover{
     -o-transition-duration: .2s; /* Opera */
 }
 
-.facebook, .twitter, .pintrist{
+.social-icon{
     width: 56px;
     height: 46px;
+    background-repeat: no-repeat;
 }
 
 .facebook{
@@ -727,6 +814,20 @@ ul.social-icons li a:hover{
 .pintrist{
     background-image: url(images/pintrist.png);
 }
+
+
+.home-facebook{
+    background-image: url(images/home-facebook.png);
+}
+.home-twitter{
+    background-image: url(images/home-twitter.png);
+}
+.home-pintrist{
+    background-image: url(images/home-pintrist.png);
+}
+
+
+
 
 
 /*temrs*/
@@ -792,7 +893,7 @@ a#scroll-to-top{
 
 #location_search_submit_field{
     position: relative;
-    left: 198px;
+    left: 101px;
     top: -40px;
     width: 88px;
     height: 80px;
@@ -809,13 +910,13 @@ a#scroll-to-top{
 }
 
 #location_search_zip_field {
-    width: 200px;
+    width: 137px;
     height: 40px;
     font-size: 18pt;
     padding-left: 10px;
     position: relative;
     top: 30px;
-    right: 27px;
+    right: 69px;
 }
 
 #location_search_0_tr, .location_search_title, #location_search_2_tr {
@@ -824,13 +925,17 @@ a#scroll-to-top{
 
 #results{
     background-color: #fff;
-    padding: 0!important;
-    width: 360px!important;
+    padding: 3px!important;
+    width: 270px!important;
     overflow: scroll;
     position: relative;
-    bottom: 410px;
+    bottom: 305px;
     height: 440px;
     left: 431px;
+}
+
+#results h3{
+    
 }
 
 .result{
@@ -854,13 +959,21 @@ a#scroll-to-top{
 }
 
 .store-locator-container{
-    height: 750px!important;
+    height: 850px!important;
     background-image: url(images/store_locator_bg.png);
     background-repeat: no-repeat;
-    background-position: 0px 258px;
+    background-position: 0px 365px;
 }
 
 #simplemap{
-    top: 32px;
+    top: 136px;
     left: 31px;
+}
+
+#no-store{
+    display: none;
+    float: left;
+    margin-top: -15px;
+    padding-bottom: 30px;
+    margin-bottom: -130px;
 }

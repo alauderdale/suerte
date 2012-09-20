@@ -9,14 +9,39 @@
      <h1 class="luck-title" id="luck"></h1>
      <div class="page wrapped">
          <div class="clearfix"></div>
-         <div class="home-descrip" id="fade-bottom-image">
-             <!--start the loop-->
-             <?php if (have_posts()) : ?>
-             <?php while (have_posts()) : the_post(); ?>
-                     <?php the_content(); ?>     
-             <!--end the loop-->
-             <?php endwhile; ?>
-             <?php endif; ?>
+         <div class="home-inner">
+             <div class="home-descrip" id="fade-bottom-image">
+                 <!--start the loop-->
+                 <?php if (have_posts()) : ?>
+                 <?php while (have_posts()) : the_post(); ?>
+                         <?php the_content(); ?>     
+                 <!--end the loop-->
+                 <?php endwhile; ?>
+                 <?php endif; ?>
+             </div>
+             <div class="home-col">
+                 <h2 class="people-title"></h2>
+                 <div class="people-contain">
+                     <?php
+                     $peopleloop = new WP_Query( array( 'post_type' => 'person') );
+                      ?>
+                     <?php while ( $peopleloop->have_posts() ) : $peopleloop->the_post(); ?>
+                         <div class="person">
+                             <a class="fancybox fancybox.ajax" href="<?php the_permalink(); ?>">
+                                 <?php the_post_thumbnail(); ?> 
+                             </a>
+                         </div>
+                    <?php endwhile; ?>
+                 </div>
+             </div><!--end homecol-->
+             <div class="home-col">
+                 <h2 class="home-like-title">Like us &amp; follow us</h2>
+                 <ul class="social-icons home-icons">
+                     <li><a class="home-facebook social-icon" target="_blank" href="http://www.facebook.com/suertetequila"></a></li>
+                     <li><a class="home-twitter social-icon" target="_blank" href="https://twitter.com/#!/SuerteTequila"></a></li>
+                     <li><a class="home-pintrist social-icon" target="_blank" href="https://pinterest.com/suertetequila/"></a></li>
+                 </ul>
+             </div><!--end homecol-->
          </div>
      </div><!--end page-->
      <div class="bottom-image-contain">
@@ -83,6 +108,7 @@
          <h2>Find Suerte Near You!</h2>
          </div>
      </div>
+     <div id="no-store" class="orange-bar"><h1>NO STORE!!!</h1></div>
      <div class="page wrapped" >
          <div class="store-locator-container">
          <?php
@@ -145,6 +171,12 @@
             </div>
         </div><!--end process slider-->
      </div><!--end page-->
+ </section> <!--end page-wrapper-->
+ <section id="press" class="clearfix section">
+     <div class="orange-bar">
+         <h1>No press or awards yet</h1>
+         <h2>but we're feeling really lucky, so check back soon!</h2>
+     </div>
  </section> <!--end page-wrapper-->
  <?php get_footer(); ?>
  

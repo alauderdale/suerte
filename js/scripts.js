@@ -76,18 +76,18 @@ $(window).resize(function(){
 function resizenow() {
     var browserwidth = $(window).width();
     var browserheight = $(window).height();
-    $('#rabbit').css('left', ((browserwidth + 1500 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
+    $('#rabbit').css('left', ((browserwidth + 1300 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
     
     
     $('#rabbit').mouseover(function(){
     
-    	$('#rabbit').css('left', ((browserwidth + 1470 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
+    	$('#rabbit').css('left', ((browserwidth + 1270 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
     
     });
     
     $('#rabbit').mouseout(function(){
     
-    	$('#rabbit').css('left', ((browserwidth + 1500 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
+    	$('#rabbit').css('left', ((browserwidth + 1300 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
     
     });
     
@@ -100,8 +100,13 @@ resizenow();
 
 //video image
 
-
 $('.video').append('<div class="video-img"></div>');
+
+
+//locator error
+
+
 
       
 });
+

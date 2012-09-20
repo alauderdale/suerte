@@ -67,6 +67,18 @@ function create_my_post_types() {
 				)
 			);
 			
+			register_post_type( 'person',
+					array(
+						'labels' => array(
+							'name' => __( 'The people behind suerte' ),
+							'singular_name' => __( 'person' )
+						),
+						'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
+						'public' => true,
+			
+					)
+				);
+			
             
             register_post_type( 'storelocate',
             		array(

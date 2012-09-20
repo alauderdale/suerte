@@ -316,6 +316,7 @@ ul.main-nav li a:hover{
 
 .bottom-image{
     background-image: url(images/trees.png);
+    background-position-x: -170px;
     height: 448px;
 }
 
@@ -346,6 +347,7 @@ h2.people-title{
     float: left;
     padding: 7px 10px;
     margin-right: 20px;
+    margin-bottom: 20px;
     width: 52px;
     height: 52px;
     background-image: url(images/avatar_bg.png);
@@ -542,6 +544,7 @@ h1.locator-title{
     margin-top: 40px;
     float: left;
     padding: 27px 0;
+    z-index: -99999;
 }
 
 .locator-banner h2{
@@ -661,14 +664,36 @@ h1.process-title{
     padding: 15px 0;
     background-repeat: repeat-x;
     text-transform: uppercase;
+    z-index: 9999;
+}
+
+.orange-bar .wrapped{
+    padding-top: 0;
 }
 
 .orange-bar h1{
     font-size: 28pt;
+    margin-top:0!important;
 }
 
 .orange-bar h2{
     font-size: 16pt;
+}
+
+.orange-bar h3{
+    font-size: 16pt;
+    text-align: left;
+    color: rgba(255,255,255,.8);
+}
+
+.orange-bar h4{
+    font-size: 12pt;
+    text-align: left;
+}
+
+.orange-bar a{
+    color: #fff;
+    text-decoration: underline;
 }
 
 
@@ -963,6 +988,9 @@ a#scroll-to-top{
     background-image: url(images/store_locator_bg.png);
     background-repeat: no-repeat;
     background-position: 0px 365px;
+}
+
+.store-locator-container-outter {
 }
 
 #simplemap{

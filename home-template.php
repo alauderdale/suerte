@@ -108,8 +108,18 @@
          <h2>Find Suerte Near You!</h2>
          </div>
      </div>
-     <div id="no-store" class="orange-bar"><h1>NO STORE!!!</h1></div>
-     <div class="page wrapped" >
+     <div id="no-store" class="orange-bar">
+         <div class="wrapped">
+         <h3>
+             Suerte is currently unavailable in your area.
+         </h3>
+         <h4>Click 
+             <a href="#">HERE</a>
+         to let us know where you live, and we'll see about getting suerte in stores<br/> near you.
+         </h4>
+         </div>
+     </div>
+     <div class="page store-locator-container-outter wrapped" >
          <div class="store-locator-container">
          <?php
          $storelocateloop = new WP_Query( array( 'post_type' => 'storelocate') );

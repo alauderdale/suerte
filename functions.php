@@ -91,6 +91,18 @@ function create_my_post_types() {
             
             		)
             	);
+            	
+            register_post_type( 'onlinelocation',
+            		array(
+            			'labels' => array(
+            				'name' => __( 'Online Locations' ),
+            				'singular_name' => __( 'Online Location' )
+            			),
+            			'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
+            			'public' => true,
+            
+            		)
+            	);
 }
 
 ///custom categories
@@ -160,7 +172,6 @@ function create_my_post_types() {
      'id'  => $prefix.'text2',
      'type'  => 'text'
    )
- 
  );
  
  // The Callback

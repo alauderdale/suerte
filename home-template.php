@@ -4,7 +4,7 @@
  */ ?>
  
  <?php get_header(); ?>
- <div id="rabbit"></div>
+ <div id="rabbit"><div class="rabbit-inner"></div></div>
  <section id="home" class="clearfix section">
      <h1 class="luck-title" id="luck"></h1>
      <div class="page wrapped">
@@ -119,7 +119,7 @@
          </h4>
          </div>
      </div>
-     <div class="page store-locator-container-outter wrapped" >
+     <div class="page wrapped" >
          <div class="store-locator-container">
          <?php
          $storelocateloop = new WP_Query( array( 'post_type' => 'storelocate') );
@@ -129,6 +129,20 @@
          <?php endwhile; ?>
          </div>
      </div><!--end page-->
+     <div class="wrapped">
+         <div class="online-location-container">
+             <h3>SHOP ONLINE AT:</h3>
+             <?php
+             $onlinelocationloop = new WP_Query( array( 'post_type' => 'onlinelocation') );
+              ?>
+             <?php while ( $onlinelocationloop->have_posts() ) : $onlinelocationloop->the_post(); ?>
+                 <div class="online-location">
+                     <h2><?php the_title(); ?></h2>
+                     <?php the_content(); ?>
+                 </div>
+             <?php endwhile; ?>
+         </div>
+     </div>
  </section> <!--end page-wrapper-->
  <section id="photos-vids" class="clearfix section">
      <div class="page wrapped">
@@ -146,7 +160,7 @@
                           <?php the_post_thumbnail(); ?> 
                      </a>
                  </div><!--end media item-->
-            <?php endwhile; ?>
+             <?php endwhile; ?>	
          </div><!--end media container-->
      </div><!--end page-->
  </section> <!--end page-wrapper-->
@@ -182,7 +196,11 @@
         </div><!--end process slider-->
      </div><!--end page-->
  </section> <!--end page-wrapper-->
+ <dic class="rabbit-up"></dic>
  <section id="press" class="clearfix section">
+     <div class="wrapped">
+         <h1 class="press-title"></h1>
+     </div>
      <div class="orange-bar">
          <h1>No press or awards yet</h1>
          <h2>but we're feeling really lucky, so check back soon!</h2>

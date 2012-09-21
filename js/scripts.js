@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
 // initiate page scroller plugin
 $('body').pageScroller({
     
@@ -47,25 +48,36 @@ $(window).load(function() {
 
 
 
-       $(window).scroll(function(){
-         var divOffset = $('#luck').offset();
-         if(window.scrollY > divOffset.top ){
-            $('#bottom-image').fadeOut(300);
-         }
-         if(window.scrollY < divOffset.top){
-            $('#bottom-image').fadeIn(300);
-         }
-      });
-      
+    $(window).scroll(function(){
+     var divOffset = $('#luck').offset();
+     if(window.scrollY > divOffset.top ){
+        $('#bottom-image').fadeOut(300);
+     }
+     if(window.scrollY < divOffset.top){
+        $('#bottom-image').fadeIn(300);
+     }
+    });
+    
+    
+    $(window).scroll(function(){
+     var divOffset2 = $('.nivo-caption').offset();
+     if(window.scrollY > divOffset2.top ){
+        $('.rabbit-inner').css('top','-500px');
+     }
+     if(window.scrollY < divOffset2.top){
+        $('.rabbit-inner').css('top','0');
+     }
+    });
       
       
 //rabbit position
 
-$(function(){  // $(document).ready shorthand
+
+    
+
+$(function(){  
   $('#rabbit').fadeIn(50);
 });
-
-
 
 
 $(window).resize(function(){
@@ -78,18 +90,7 @@ function resizenow() {
     var browserheight = $(window).height();
     $('#rabbit').css('left', ((browserwidth + 1300 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
     
-    
-    $('#rabbit').mouseover(function(){
-    
-    	$('#rabbit').css('left', ((browserwidth + 1270 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
-    
-    });
-    
-    $('#rabbit').mouseout(function(){
-    
-    	$('#rabbit').css('left', ((browserwidth + 1300 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
-    
-    });
+
     
 };
 
@@ -100,10 +101,22 @@ resizenow();
 
 //video image
 
-$('.video').append('<div class="video-img"></div>');
 
 
-//locator error
+$(function() {
+ $('.video').append('<div class="video-img"></div>');
+});
+
+
+
+//enter error
+
+$('a.no-button').click(function(){
+
+	$('#enter-append').fadeIn('slow');
+
+});
+
 
 
 

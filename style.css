@@ -438,6 +438,10 @@ h2.home-like-title{
     padding: 20px;
 }
 
+.person-descript{
+    display: none;
+}
+
 /*tequilas*/
 
 h1.tequillas-title{

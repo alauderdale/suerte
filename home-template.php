@@ -114,7 +114,7 @@
              Suerte is currently unavailable in your area.
          </h3>
          <h4>Click 
-             <a href="#">HERE</a>
+             <a href="index.php/contact" class="fancybox fancybox.ajax">HERE</a>
          to let us know where you live, and we'll see about getting suerte in stores<br/> near you.
          </h4>
          </div>

@@ -649,6 +649,11 @@ h1.locator-title{
 }
 
 
+/*contact*/
+.sscf-message{
+    display: none!important;
+}
+
 /*photos and vids*/
 
 h1.photos-title {

@@ -12,30 +12,27 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/nivo-slider.css" />
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="screen" /> 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!--  fancybox-->
+    <script src="<?php bloginfo('template_url'); ?>/js/jquery.fancybox.js"></script>
     <!--  pagination -->
     <script src="<?php bloginfo('template_url'); ?>/js/jquery.cookie.js"></script>
     <!--  slider -->
     <script src="<?php bloginfo('template_url'); ?>/js/jquery.nivo.slider.js"></script>
-    <!--  fancybox-->
-    <script src="<?php bloginfo('template_url'); ?>/js/jquery.fancybox.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js/jquery.fancybox.pack.js"></script>
     <!--  masonry-->
     <script src="<?php bloginfo('template_url'); ?>/js/jquery.masonry.js"></script>
     <!-- smooth scroll-->
     <script src="<?php bloginfo('template_url'); ?>/js/smoothscroll.js"></script>
-    <script type="text/javascript">
-    	$(function() {
-    		var COOKIE_NAME = 'splash-page-cookie';
-    		$go = $.cookie(COOKIE_NAME);
-    		if ($go == null) {
-    			$.cookie(COOKIE_NAME, 'test', { path: '/' });
-    			window.location = "index.php/enter"
-    		}
-    		else {
-    		}
-    	});
-    </script>
   <?php wp_head(); ?>
+  <script type="text/javascript">
+  	$(function() {
+  		var COOKIE_NAME = 'splash-page-cookie';
+  		$go = $.cookie(COOKIE_NAME);
+  		if ($go == null) {
+  			$.cookie(COOKIE_NAME, 'test', { path: '/' });
+  			window.location = "index.php/enter"
+  		}
+  	});
+  </script>
 </head>
 <body>
     <header>

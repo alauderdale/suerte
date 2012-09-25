@@ -230,6 +230,37 @@ function create_my_post_types() {
      }
    } // end foreach
  }
- add_action('save_post', 'save_custom_meta');  
+ add_action('save_post', 'save_custom_meta'); 
+ 
+ 
+ /**
+  * Register our sidebars and widgetized areas.
+  *
+  */
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function suerte_widgets_init() {
+
+	register_sidebar( array(
+		'name' => 'Footer Widget 1',
+		'id' => 'footer_1',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h1>',
+		'after_title' => '</h1>',
+	) );
+	
+	register_sidebar( array(
+		'name' => 'Footer Widget 2',
+		'id' => 'footer_2',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h1>',
+		'after_title' => '</h1>',
+	) );
+}
+add_action( 'widgets_init', 'suerte_widgets_init' ); 
 
 ?>

@@ -17,6 +17,7 @@
  .fancybox-inner{
      background: rgba(255,255,255,.8);
      height: 638px!important;
+     border-radius: 15px;
  }
  
 .fancybox-close{

@@ -13,25 +13,24 @@
                 </div>
             </div>
             <div class="footer-col">
-                <h1>Contact Us</h1>
-                <p>call 1800.777.7777<br/>
-                email <a href="mailto:info@drinksuerte.com">info@drinksuerte.com</a></p>
+                <?php 
+                if ( dynamic_sidebar('footer_1') ) : 
+                ?>
+                <?php endif; ?>
             </div>
             <div class="footer-col">
-                <h1>Suerte Tequila</h1>
-                <p>Suerte Tequila <br/>
-                40% alc./vol. (80 Proof)<br/>
-                Imported by Colorado Spirits Importers, LLC<br/>
-                Boulder, CO.<br/>
-                Please enjoy responsibly.<br/>
-                &copy; 2012
-                </p>
+                <?php 
+                if ( dynamic_sidebar('footer_2') ) : 
+                ?>
+                <?php endif; ?>
             </div>
         </div>
     </footer>
     <div class="social-bar">
         <div class="wrapped clearfix">
-            <p>&copy; 2012 all right reserved Suerte Tequila             <a href="index.php?page_id=115" class="fancybox fancybox.ajax">Terms of service</a></p>
+            <p>&copy; 2012 all right reserved Suerte Tequila             <a href="index.php?pagename=terms" class="fancybox fancybox.ajax">Terms &amp; conditions</a>
+                <a href="index.php?pagename=privacy-policy" class="fancybox fancybox.ajax">Privacy Policy</a>
+            </p>
             <ul class="social-icons">
                 <li><a class="facebook social-icon" target="_blank" href="http://www.facebook.com/suertetequila"></a></li>
                 <li><a class="twitter social-icon" target="_blank" href="https://twitter.com/#!/SuerteTequila"></a></li>

@@ -4,7 +4,7 @@
  */ ?>
  
  <?php get_header(); ?>
- <div id="rabbit"><a href="index.php?page_id=177" class="fancybox fancybox.ajax" ><div class="rabbit-inner"></div></a></div>
+ <div id="rabbit"><a href="index.php?pagename=rabbit" class="fancybox fancybox.ajax" ><div class="rabbit-inner"></div></a></div>
  <section id="home" class="clearfix section">
      <h1 class="luck-title" id="luck"></h1>
      <div class="page wrapped">
@@ -114,7 +114,7 @@
              Suerte is currently unavailable in your area.
          </h3>
          <h4>Click 
-             <a href="index.php?page_id=195" class="fancybox fancybox.ajax">HERE</a>
+             <a href="index.php?pagename=contact" class="fancybox fancybox.ajax">HERE</a>
          to let us know where you live, and we'll see about getting suerte in stores<br/> near you.
          </h4>
          </div>
@@ -168,7 +168,12 @@
      <div class="page wrapped">
          <h1 class="process-title"></h1>
          <div class="process-descrip">
-             <p>Pellentesque feugiat ante sit amet augue mollis ut convallis justo tempus. Phasellus laoreet tincidunt neque venenatis scelerisque. Sed ut orci tempus leo malesuada varius non sit amet risus. Mauris pellentesque, lectus et ullamcorper rutrum, augue velit placerat lacus, sit amet malesuada mi mauris sed mi. Nam non ligula augue. Aliquam ut volutpat quam. Nam vehicula metus id ante semper in luctus ligula pretium. In hac habitasse platea dictumst. Integer sem libero, gravida id tempor malesuada, blandit et nibh. Integer nec hendrerit mi. Nullam dolor lorem, dictum vitae adipiscing nec, lobortis faucibus enim. Nullam auctor, nunc et vestibulum accumsan, elit nulla hendrerit elit, vel laoreet enim libero quis quam.</p>
+             <?php
+             $processdescriptloop = new WP_Query( 'pagename=process-description' );
+              ?>
+              <?php while ( $processdescriptloop->have_posts() ) : $processdescriptloop->the_post(); ?>
+                  <?php the_content(); ?>
+              <?php endwhile; ?>
          </div>   
         <div class="process-slider">
             <div class="slider-wrapper">

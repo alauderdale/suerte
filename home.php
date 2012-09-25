@@ -11,7 +11,7 @@
               <div class="enter-bottles"></div>
               <h1>Are you of <br/> legal drinking age?</h1>
               <div class="enter-controls">
-                  <a href="index.php?page_id=160" class="yes-button">
+                  <a href="index.php?pagename=home" class="yes-button">
                       
                   </a>
                   <a href="#" onclick="return false;" class="no-button">
@@ -19,7 +19,7 @@
                   </a>
               </div>
               <div class="enter-descrip">
-                  <p>Enter this site only if you are of lega drinking age. By clicking yes you agree to the <a href="index.php?page_id=115" class="fancybox fancybox.ajax>Terms of service">Terms of Service</a></p>
+                  <p>Enter this site only if you are of lega drinking age. By clicking yes you agree to the <a href="index.php?pagename=terms" class="fancybox fancybox.ajax>Terms of service">Terms of Service</a></p>
               </div>
           </div>
       </div>

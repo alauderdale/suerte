@@ -245,7 +245,7 @@ nav.main-nav-wrapper{
     width: 900px;
     margin: 0 auto;
     height: 20px;
-    background-color: rgba(216,217,221,.9);
+    background-color: rgba(255,255,255,.7);
     padding: 20px 30px 30px 30px;
     box-shadow: 0px 2px 4px rgba(0,0,0,.3);
 }
@@ -310,7 +310,6 @@ ul.main-nav li a:hover{
     -moz-transition-duration: .2s; /* Firefox 4 */
     -webkit-transition-duration: .2s; /* Safari and Chrome */
     -o-transition-duration: .2s; /* Opera */
-    display: block;
     float: left;
     z-index: 702;
     display: none;
@@ -333,18 +332,10 @@ ul.main-nav li a:hover{
     -moz-transition-duration: .2s; /* Firefox 4 */
     -webkit-transition-duration: .2s; /* Safari and Chrome */
     -o-transition-duration: .2s; /* Opera */
-}
-
-
-#rabbit:hover {
     opacity: .7;
-    transition-duration: .2s;
-    -moz-transition-duration: .2s; /* Firefox 4 */
-    -webkit-transition-duration: .2s; /* Safari and Chrome */
-    -o-transition-duration: .2s; /* Opera */
-    cursor: pointer;
-
 }
+
+
 
 
 /*home*/
@@ -653,9 +644,9 @@ h1.locator-title{
 
 
 /*contact*/
-.sscf-message{
-    display: none!important;
-}
+
+
+
 
 /*photos and vids*/
 
@@ -668,7 +659,7 @@ h1.photos-title {
 .media-container{
     float: left;
     margin-top: 50px;
-    height: 900px;
+
 }
 
 .box{
@@ -693,7 +684,7 @@ h1.photos-title {
     -webkit-transition-duration: .2s; /* Safari and Chrome */
     -o-transition-duration: .2s; /* Opera */
     padding: 5px;
-    background-color: rgba(193,153,118 , .4);
+    background-color: rgba(193,153,118 , .1);
     margin: 5px;
     border-radius:5px;
 }
@@ -823,6 +814,11 @@ h1.press-title{
 
 /*footer*/
 
+footer .wrapped{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
 #footer-head{
     background-image: url(images/footer_head.png);
     background-repeat: repeat-x;
@@ -902,7 +898,7 @@ ul.social-icons{
     float: right;
     list-style: none;
     margin-top: 10px;
-    margin-right: 100px;
+    margin-right: 220px;
 }
 
 ul.home-icons{
@@ -1350,8 +1346,6 @@ a#scroll-to-top{
 
 
 
-.store-locator-container-outter {
-}
 
 #map_search{
     float: left;

@@ -29,7 +29,7 @@
   		$go = $.cookie(COOKIE_NAME);
   		if ($go == null) {
   			$.cookie(COOKIE_NAME, 'test', { path: '/' });
-  			window.location = "index.php/enter"
+  			window.location = "index.php?page_id=160"
   		}
   	});
   </script>

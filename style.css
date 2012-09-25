@@ -350,13 +350,12 @@ ul.main-nav li a:hover{
 /*home*/
 
 
-
 .home-inner{
     padding-left: 79px;
 }
 
 .home-descrip{
-    margin: -28px 290px 20px 155px; 
+    margin: 8px 258px 20px 1px; 
     float: left;
 }
 
@@ -448,6 +447,7 @@ h1.tequillas-title{
     width: 369px;
     height: 98px;
     background-image: url(images/tequillas_title.png);
+    margin-left: 66px;
 }
 
 .teq-arrow{
@@ -459,9 +459,9 @@ h1.tequillas-title{
 }
 
 .drink-container{
-    margin-top: 60px;
     width: 100%;
     float: left;
+    padding-left: 100px;
 }
 
 .bottle{
@@ -502,7 +502,7 @@ h3.drink-title{
     width: 400px;
     background-image: url(images/tequilla-title-bg.png);
     background-repeat: no-repeat;
-        background-position: -50px 0px;
+    background-position: -50px 0px;
 
 }
 
@@ -546,6 +546,7 @@ h3.drink-title{
     width: 600px;
     height: 400px;
     border-radius: 100px;
+    padding-bottom: 20px;
 }
 
 .revipie-title-contain {
@@ -620,6 +621,8 @@ h1.locator-title{
 }
 
 
+
+
 /*online locations*/
 
 .online-location-container{
@@ -684,7 +687,7 @@ h1.photos-title {
 }
 
 .media-item{
-    opacity: .8;
+    opacity: 1;
     transition-duration: .2s;
     -moz-transition-duration: .2s; /* Firefox 4 */
     -webkit-transition-duration: .2s; /* Safari and Chrome */
@@ -696,7 +699,7 @@ h1.photos-title {
 }
 
 .media-item:hover{
-    opacity: 1;
+    opacity: .8;
     transition-duration: .2s;
     -moz-transition-duration: .2s; /* Firefox 4 */
     -webkit-transition-duration: .2s; /* Safari and Chrome */
@@ -730,6 +733,10 @@ h1.photos-title {
 }
 
 /*process*/
+
+#process{
+    margin-left: 76px;
+}
 
 h1.process-title{
     width: 398px;
@@ -804,12 +811,14 @@ h1.press-title{
 /*sections*/
 
 .section{
-    padding: 110px 0;
+    padding-top: 110px;
 }
 
 .section:first-of-type{
-margin-bottom: 150px;
+    padding-bottom: 0;
+    margin-bottom: -100px;
 }
+
 
 
 /*footer*/
@@ -978,6 +987,247 @@ ul.social-icons li a:hover{
     font-weight: bold;
 }
 
+/*rabbit*/
+
+
+.rabbit{
+    width: 745px;
+    padding: 10px;
+    position: relative;
+}
+
+.rabbit h3{
+    padding-bottom: 20px;
+}
+
+
+.rabbit p{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.explore-title{
+    width: 280px;
+    height: 140px;
+    background-image: url(images/explore_bg.png);
+    float: right;
+    margin: 20px 20px 0 0;
+}
+
+.rabbit-info{
+    float: right;
+    width: 300px;
+    position: relative;
+    top: 200px;
+    left: 207px;
+    height: 200px;
+    margin-bottom: -200px;
+}
+
+.rabbit-info h1{
+    color: #6ec14b;
+    font-size: 18pt;
+    text-transform: uppercase;
+}
+
+.the-rabbit{
+    background-image: url(images/rabbit_overlay_bg.png);
+    width: 364px;
+    height: 550px;
+    float: left;
+    position: relative;
+    left: 60px;
+    margin-bottom: -10px;
+}
+
+a.icon{
+    background-image: url(images/icons_sprite.png);
+    float: left;
+}
+
+a.icon:hover{
+
+}
+
+a.plant{
+    width: 93px;
+    height: 99px;
+    background-position: 503px 415px;
+    position: relative;
+    top: 327px;
+    left: 238px;
+}
+
+a.plant:hover{
+    background-position: 503px 145px;
+}
+
+
+a.water{
+    width: 29px;
+    height: 33px;
+    background-position: 125px -108px;
+    position: relative;
+    top: 297px;
+    left: 178px;
+}
+
+a.water:hover{
+    background-position: 125px 106px;
+}
+
+a.four{
+    width: 50px;
+    height: 35px;
+    background-position:49px -28px;
+    position: relative;
+    top: 280px;
+    left: 97px;
+}
+
+a.four:hover{
+    background-position: 49px -300px;
+}
+
+
+a.diamond{
+    width: 59px;
+    height: 62px;
+    background-position:145px -18px;
+    position: relative;
+    top: 305px;
+    left: -3px;
+}
+
+a.diamond:hover{
+    background-position: 145px 194px;
+}
+
+
+a.lips{
+    width: 21px;
+    height: 19px;
+    background-position:233px -116px;
+    position: relative;
+    top: 316px;
+    left: -92px;
+}
+
+a.lips:hover{
+    background-position: 233px 98px;
+}
+
+
+a.spade{
+    width: 26px;
+    height: 40px;
+    background-position:373px -172px;
+    position: relative;
+    top: 327px;
+    left: -130px;
+}
+
+a.spade:hover{
+    background-position: 373px 39px;
+}
+
+a.tahona{
+    width: 34px;
+    height: 34px;
+    background-position:326px -108px;
+    position: relative;
+    top: 393px;
+    left: -68px;
+}
+
+a.tahona:hover{
+    background-position: 326px -379px;
+}
+
+a.aa{
+    width: 14px;
+    height: 13px;
+    background-position:240px -185px;
+    position: relative;
+    top: 425px;
+    left: -75px;
+}
+
+a.aa:hover{
+    background-position: 240px -457px;
+}
+
+a.star{
+    width: 15px;
+    height: 15px;
+    background-position:300px -185px;
+    position: relative;
+    top: 376px;
+    left: -104px;
+}
+
+a.star:hover{
+    background-position: 300px -456px;
+}
+
+a.crown{
+    width: 37px;
+    height: 35px;
+    background-position:390px -16px;
+    position: relative;
+    top: 356px;
+    left: -216px;
+}
+
+a.crown:hover{
+    background-position: 390px -289px;
+}
+
+a.bolt{
+    width: 17px;
+    height: 34px;
+    background-position:182px -175px;
+    position: relative;
+    top: 342px;
+    left: -162px;
+}
+
+a.bolt:hover{
+    background-position: 182px -448px;
+}
+
+a.bones{
+    width: 81px;
+    height: 79px;
+    background-position:263px -2px;
+    position: relative;
+    top: 172px;
+    left: -192px;
+}
+
+a.bones:hover{
+    background-position: 263px -272px;
+}
+
+a.line{
+    width: 36px;
+    height: 19px;
+    background-position:325px -23px;
+    position: relative;
+    top: 297px;
+    left: 206px;
+}
+
+a.line:hover{
+    background-position: 325px -294px;
+}
+
+.plant-text, .water-text, .four-text, .diamond-text, .lips-text, .spade-text{
+    display: none;
+}
+
+
+
 /*plugin styling*/
 
 /*scroll to top*/
@@ -1097,6 +1347,8 @@ a#scroll-to-top{
     margin-bottom: -342px;
     width: 800px;
 }
+
+
 
 .store-locator-container-outter {
 }

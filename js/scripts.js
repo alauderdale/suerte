@@ -33,9 +33,10 @@ var $container = $('#media-contain');
 $(window).load(function() {
     $('#process-slider').nivoSlider({
     ////options
-    effect: 'fade',
+    effect: 'slideInLeft', // Specify sets like: 'fold,fade,sliceDown'
     prevText: '', 
     nextText: '',
+    manualAdvance: true, // Force manual transitions
     controlNav: false
     
     });
@@ -49,7 +50,7 @@ $(window).load(function() {
 
 
     $(window).scroll(function(){
-     var divOffset = $('#luck').offset();
+     var divOffset = $('.home-descrip').offset();
      if(window.scrollY > divOffset.top ){
         $('#bottom-image').fadeOut(300);
      }
@@ -116,7 +117,6 @@ $('a.no-button').click(function(){
 	$('#enter-append').fadeIn('slow');
 
 });
-
 
 
 

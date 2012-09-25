@@ -4,7 +4,7 @@
  */ ?>
  
  <?php get_header(); ?>
- <div id="rabbit"><div class="rabbit-inner"></div></div>
+ <div id="rabbit"><a href="index.php?page_id=177" class="fancybox fancybox.ajax" ><div class="rabbit-inner"></div></a></div>
  <section id="home" class="clearfix section">
      <h1 class="luck-title" id="luck"></h1>
      <div class="page wrapped">
@@ -68,7 +68,7 @@
                      <div class="drink-descrip">
                          <?php the_content(); ?>
                      </div>
-                     <p class="recipies">recipies:</p>
+                     <p class="recipies">recipes:</p>
                      <script type="text/javascript">
                      $(document).ready(function() {
                          jQuery('#drink-slider-<?php the_ID(); ?> ').jcarousel(); 
@@ -114,7 +114,7 @@
              Suerte is currently unavailable in your area.
          </h3>
          <h4>Click 
-             <a href="index.php/contact" class="fancybox fancybox.ajax">HERE</a>
+             <a href="index.php?page_id=195" class="fancybox fancybox.ajax">HERE</a>
          to let us know where you live, and we'll see about getting suerte in stores<br/> near you.
          </h4>
          </div>

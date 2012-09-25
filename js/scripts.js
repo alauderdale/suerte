@@ -119,6 +119,23 @@ $('a.no-button').click(function(){
 });
 
 
+//textfield storelocate
+
+$('#results').addClass('hidden');
+$('#simplemap').addClass('hidden');
+$('.store-locator-container').addClass('no-bg');
+
+
+$('#location_search_submit_field').click(function(){
+
+	$('#results').removeClass('hidden');
+	$('#simplemap').removeClass('hidden');
+	$('.store-locator-container').removeClass('no-bg');
+
+
+});
+
+
 
 
 

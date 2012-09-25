@@ -28,7 +28,7 @@
     </footer>
     <div class="social-bar">
         <div class="wrapped clearfix">
-            <p>&copy; 2012 all right reserved Suerte Tequila             <a href="index.php?pagename=terms" class="fancybox fancybox.ajax">Terms &amp; conditions</a>
+            <p>&copy; 2012 all right reserved Suerte Tequila             <a href="index.php?pagename=terms" class="fancybox fancybox.ajax">Terms &amp; conditions</a> | 
                 <a href="index.php?pagename=privacy-policy" class="fancybox fancybox.ajax">Privacy Policy</a>
             </p>
             <ul class="social-icons">

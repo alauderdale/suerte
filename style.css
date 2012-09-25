@@ -434,6 +434,10 @@ h2.home-like-title{
 
 /*tequilas*/
 
+#tequillas{
+    margin-bottom: 71px;
+}
+
 h1.tequillas-title{
     width: 369px;
     height: 98px;
@@ -1222,7 +1226,7 @@ a.line:hover{
     background-position: 325px -294px;
 }
 
-.plant-text, .water-text, .four-text, .diamond-text, .lips-text, .spade-text{
+.plant-text, .water-text, .four-text, .diamond-text, .lips-text, .spade-text, .tahona-text, .aa-text, .star-text, .crown-text, .bolt-text, .bones-text, .line-text{
     display: none;
 }
 
@@ -1233,12 +1237,16 @@ a.line:hover{
 /*scroll to top*/
 
 a#scroll-to-top{
-    right: 359px!important;
+    left: 15px!important;
     width: 72px!important;
     height: 72px!important;
     background-image: url(images/scroll-bg.png)!important;
-    bottom: 300px!important;
+    bottom: 275px!important;
+    z-index: 9999999;
+
+    
 }
+
 
 /*newsletter*/
 
@@ -1342,7 +1350,7 @@ a#scroll-to-top{
 }
 
 .store-locator-container{
-    height: 850px!important;
+    height: 850px;
     background-image: url(images/store_locator_bg.png);
     background-repeat: no-repeat;
     background-position: 0px 18px;
@@ -1360,13 +1368,6 @@ a#scroll-to-top{
     -o-transition-duration: .2s; /* Opera */
 }
 
-.no-bg{
-    background: none;
-    transition-duration: .2s;
-    -moz-transition-duration: .2s; /* Firefox 4 */
-    -webkit-transition-duration: .2s; /* Safari and Chrome */
-    -o-transition-duration: .2s; /* Opera */
-}
 
 #map_search{
     float: left;
@@ -1386,4 +1387,13 @@ a#scroll-to-top{
     margin-top: -15px;
     padding-bottom: 30px;
     margin-bottom: -130px;
+}
+
+.no-bg{
+    background: none;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+    height: 537px!important;
 }

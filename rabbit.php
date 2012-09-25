@@ -39,7 +39,6 @@
             $('.plant-text').hide();
         });
         
-        
         $('a.water').mouseover(function(){
             $('.water-text').fadeIn(300);
         });
@@ -62,7 +61,6 @@
             $('.diamond-text').hide();
         });
         
-        
         $('a.lips').mouseover(function(){
             $('.lips-text').fadeIn(300);
         });
@@ -70,12 +68,61 @@
             $('.lips-text').hide();
         });
         
-        
         $('a.spade').mouseover(function(){
             $('.spade-text').fadeIn(300);
         });
         $('a.spade').mouseout(function(){
             $('.spade-text').hide();
+        });
+        
+        $('a.tahona').mouseover(function(){
+            $('.tahona-text').fadeIn(300);
+        });
+        $('a.tahona').mouseout(function(){
+            $('.tahona-text').hide();
+        });
+        
+        $('a.aa').mouseover(function(){
+            $('.aa-text').fadeIn(300);
+        });
+        $('a.aa').mouseout(function(){
+            $('.aa-text').hide();
+        });
+        
+        $('a.star').mouseover(function(){
+            $('.star-text').fadeIn(300);
+        });
+        $('a.star').mouseout(function(){
+            $('.star-text').hide();
+        });
+        
+        
+        $('a.crown').mouseover(function(){
+            $('.crown-text').fadeIn(300);
+        });
+        $('a.crown').mouseout(function(){
+            $('.crown-text').hide();
+        });
+        
+        $('a.bolt').mouseover(function(){
+            $('.bolt-text').fadeIn(300);
+        });
+        $('a.bolt').mouseout(function(){
+            $('.bolt-text').hide();
+        });
+        
+        $('a.line').mouseover(function(){
+            $('.line-text').fadeIn(300);
+        });
+        $('a.line').mouseout(function(){
+            $('.line-text').hide();
+        });
+        
+        $('a.bones').mouseover(function(){
+            $('.bones-text').fadeIn(300);
+        });
+        $('a.bones').mouseout(function(){
+            $('.bones-text').hide();
         });
     
     });
@@ -111,6 +158,34 @@
                     </div>
                     <div class="spade-text">
                         <h1>spade</h1>
+                        <p>Tequila can only be called ‘Tequila’ if it’s</p>
+                    </div>
+                    <div class="tahona-text">
+                        <h1>Tahona</h1>
+                        <p>Tequila can only be called ‘Tequila’ if it’s made from 100% pure Blue Weber Agave. Suerte is!</p>
+                    </div>
+                    <div class="aa-text">
+                        <h1>A</h1>
+                        <p>Tequila can only be called ‘Tequila’ if it’s</p>
+                    </div>
+                    <div class="star-text">
+                        <h1>star</h1>
+                        <p>Tequila can only be called ‘Tequila’ if it’s</p>
+                    </div>
+                    <div class="crown-text">
+                        <h1>crown</h1>
+                        <p>Tequila can only be called ‘Tequila’ if it’s made from 100% pure Blue Weber Agave. Suerte is!</p>
+                    </div>
+                    <div class="bolt-text">
+                        <h1>bolt</h1>
+                        <p>Tequila can only be called ‘Tequila’ if it’s</p>
+                    </div>
+                    <div class="line-text">
+                        <h1>line</h1>
+                        <p>Tequila can only be called ‘Tequila’ if it’s</p>
+                    </div>
+                    <div class="bones-text">
+                        <h1>neckbone</h1>
                         <p>Tequila can only be called ‘Tequila’ if it’s</p>
                     </div>
                 </div> 

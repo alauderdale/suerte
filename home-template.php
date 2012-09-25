@@ -131,10 +131,17 @@
      </div><!--end page-->
      <div class="wrapped">
          <div class="online-location-container">
-             <h3>SHOP ONLINE AT:</h3>
              <?php
              $onlinelocationloop = new WP_Query( array( 'post_type' => 'onlinelocation') );
               ?>
+              <?php 
+                  $test=get_posts('post_type=onlinelocation');
+                  if ($test) {
+                  //found posts
+                  echo "<h3>SHOP ONLINE AT:</h3>";
+                  }
+              ?>
+
              <?php while ( $onlinelocationloop->have_posts() ) : $onlinelocationloop->the_post(); ?>
                  <div class="online-location">
                      <h2><?php the_title(); ?></h2>

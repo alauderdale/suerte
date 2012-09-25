@@ -124,14 +124,14 @@ $('a.no-button').click(function(){
 //textfield storelocate
 
 $('#results').addClass('hidden');
-$('#simplemap').addClass('hidden');
+$('#simplemap').addClass('push-out');
 $('.store-locator-container').addClass('no-bg');
 
 
 $('#location_search_submit_field').click(function(){
 
 	$('#results').removeClass('hidden');
-	$('#simplemap').removeClass('hidden');
+	$('#simplemap').removeClass('push-out');
 	$('.store-locator-container').removeClass('no-bg');
 
 

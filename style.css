@@ -1368,6 +1368,10 @@ a#scroll-to-top{
     -o-transition-duration: .2s; /* Opera */
 }
 
+.push-out{
+    visibility: hidden;
+}
+
 
 #map_search{
     float: left;

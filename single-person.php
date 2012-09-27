@@ -11,7 +11,7 @@
     right: 31px;
 }
 </style>
-<div class="recipie-overlay">
+<div class="person-overlay">
     <div class="revipie-title-contain">
 	<h3><?php the_title(); ?></h3>
 	</div>

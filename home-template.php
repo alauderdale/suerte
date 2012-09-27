@@ -4,7 +4,7 @@
  */ ?>
  
  <?php get_header(); ?>
- <div id="rabbit"><a href="index.php?pagename=rabbit" class="fancybox fancybox.ajax" ><div class="rabbit-inner"></div></a></div>
+ <div id="rabbit"><a title="Suerte Tequila Rabbit - CLICK TO EXPLORE" href="index.php?pagename=rabbit" class="fancybox fancybox.ajax" ><div class="rabbit-inner"></div></a></div>
  <section id="home" class="clearfix section">
      <h1 class="luck-title" id="luck"></h1>
      <div class="page wrapped">
@@ -208,7 +208,7 @@
         </div><!--end process slider-->
      </div><!--end page-->
  </section> <!--end page-wrapper-->
- <dic class="rabbit-up"></dic>
+ <dic class="rabbit-up"></div>
  <section id="press" class="clearfix section">
      <div class="wrapped">
          <h1 class="press-title"></h1>

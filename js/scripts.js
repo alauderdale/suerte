@@ -37,7 +37,7 @@ $(window).load(function() {
     prevText: '', 
     nextText: '',
     manualAdvance: true, // Force manual transitions
-    controlNav: false
+    controlNav: true
     
     });
 });

@@ -208,7 +208,6 @@
         </div><!--end process slider-->
      </div><!--end page-->
  </section> <!--end page-wrapper-->
- <dic class="rabbit-up"></div>
  <section id="press" class="clearfix section">
      <div class="wrapped">
          <h1 class="press-title"></h1>

@@ -23,18 +23,20 @@
     <!-- smooth scroll-->
     <script src="<?php bloginfo('template_url'); ?>/js/smoothscroll.js"></script>
   <?php wp_head(); ?>
-  <script type="text/javascript">
-  	$(function() {
-  		var COOKIE_NAME = 'splash-page-cookie';
-  		$go = $.cookie(COOKIE_NAME);
-  		if ($go == null) {
-  			$.cookie(COOKIE_NAME, 'test', { path: '/' });
-  			window.location = "index.php?pagename=enter"
-  		}
-  	});
-  </script>
 </head>
 <body>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(function() {
+		var COOKIE_NAME = 'splash-page-cookie';
+		$go = $.cookie(COOKIE_NAME);
+		if ($go == null) {
+			$.cookie(COOKIE_NAME, 'test', { path: '/' });
+			window.location = "index.php?pagename=enter"
+		}
+	});
+	});
+</script>
     <header>
         <nav class="main-nav-wrapper">
             <div class="logo">

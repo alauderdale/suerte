@@ -2,10 +2,13 @@
  /*
  Template Name: Enter
  */ ?>
- 
- 
+ <style>
+     .main-nav-wrapper{
+         display: none;
+     }
+ </style>
   <?php get_header(); ?>
-   <div id="rabbit"><a title="Suerte Tequila Rabbit - CLICK TO EXPLORE" href="index.php?pagename=rabbit" class="fancybox fancybox.ajax" ><div class="rabbit-inner"></div></a></div>
+   <div id="rabbit"><div class="rabbit-inner"></div></div>
   <section class="clearfix section enter">
       <div class="page wrapped">
           <div class="enter-page">

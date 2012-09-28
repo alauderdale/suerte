@@ -226,8 +226,8 @@
                         </p>
                     </div>
                     <div class="aa-text">
-                        <h1>A</h1>
-                        <p>Symbols from a deck of
+                        <h1>A (Ace)</h1>
+                        <p>Symbol from a deck of
                         cards that represent 
                         Suerte(luck). 
                         </p>
@@ -266,7 +266,7 @@
                         </p>
                     </div>
                     <div class="line-text">
-                        <h1>Cut Here’ Line</h1>
+                        <h1><em>Cut Here Line</em></h1>
                         <p>Keeping in mind that the Suerte
                         Rabbit is not a real living being...
                         cut along the dashed line 

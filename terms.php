@@ -16,7 +16,7 @@
  }
  
  .fancybox-inner{
-     background: #fff;
+     background: none;
  }
  
 .fancybox-close{

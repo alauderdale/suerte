@@ -58,6 +58,9 @@ strong{
     font-weight: bold;
 }
 
+em{
+    font-style: italic;
+}
 
 /*enter page*/
 
@@ -263,7 +266,7 @@ ul.main-nav{
 
 ul.main-nav li{
     float: left;
-    margin-right: 30px;
+    margin-right: 29px;
     text-transform: uppercase;
     font-size: 11pt;
     font-weight: bolder;
@@ -770,11 +773,11 @@ h1.process-title{
     float: right;
     position: relative;
     bottom: 163px;
-    z-index: 99999;
     background-color: rgba(0,0,0,.5);
     width: 100%;
     text-align: right;
     padding: 5px;
+    z-index: 200;
     
 }
 
@@ -1009,17 +1012,18 @@ ul.social-icons li a:hover{
     background-image: url(images/home-pintrist.png);
 }
 
-
-
-
+.result_directions{
+    position: relative;
+    top: 50px;
+}
 
 /*temrs*/
 
 
 .terms{
-    width: 760px;
+    width: 720px;
     height: 510px;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
 }
 
 .terms h3{
@@ -1065,7 +1069,7 @@ ul.social-icons li a:hover{
     width: 300px;
     position: relative;
     top: 180px;
-    left: 207px;
+    left: 247px;
     height: 200px;
     margin-bottom: -200px;
 }
@@ -1445,4 +1449,17 @@ a#scroll-to-top{
     -webkit-transition-duration: .2s; /* Safari and Chrome */
     -o-transition-duration: .2s; /* Opera */
     height: 537px!important;
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    #rabbit{
+        z-index: 999;
+    }
+    
+
 }

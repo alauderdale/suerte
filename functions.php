@@ -263,4 +263,7 @@ function suerte_widgets_init() {
 }
 add_action( 'widgets_init', 'suerte_widgets_init' ); 
 
+
+
+
 ?>

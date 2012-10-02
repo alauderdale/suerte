@@ -35,6 +35,11 @@
   <?php wp_head(); ?>
 </head>
 <body>
+<?php
+
+   header( 'Location: http://www.yoursite.com/new_page.html' ) ;
+
+?>
     <header>
         <nav class="main-nav-wrapper">
             <div class="logo">

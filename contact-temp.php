@@ -3,8 +3,12 @@
  Template Name: contact
  */ ?>
  
+
  
 <style>
+
+
+
 .fancybox-skin{
    border-radius: 40px;
    
@@ -28,6 +32,13 @@
                 	 <!--end the loop-->
             	 <?php endwhile; ?>
         	 <?php endif; ?>
+        	 <form id="contact" action="#" method="post" name="contact"><label for="email">Your E-mail</label>
+        	 	<input id="email" class="txt" type="email" name="email" />
+        	 
+        	 	<label for="msg">Enter a Message</label>
+        	 	<textarea id="msg" class="txtarea" name="msg"></textarea>
+        	 
+        	 	<button id="send">Send E-mail</button></form></div>
 	</div>
 </div><!--end recipie overlay-->
          

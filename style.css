@@ -26,6 +26,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 }
 
+
 /*clearfix*/
 
 .clearfix:after {
@@ -48,6 +49,8 @@ body{
   font-family: 'patronmedium';
   background-color:#9ba2a8;
   background-image: url(images/bg.jpg);
+  min-width: 1000px;
+  zoom: 1;
 }
 
 a{
@@ -321,19 +324,21 @@ ul.main-nav li a:hover{
     -o-transition-duration: .2s; /* Opera */
     float: left;
     display: none;
+    z-index: 900;
 }
 
-.rabbit-inner{
+a .rabbit-inner{
     background-image: url(images/rabbit.png);
     width: 776px;
     float: left;
-        z-index: 702;
+        z-index: 800!important;
     height: 1173px;
     position: relative; 
     transition-duration: 1s;
     -moz-transition-duration: 1s; /* Firefox 4 */
     -webkit-transition-duration: 1s; /* Safari and Chrome */
     -o-transition-duration: 1s; /* Opera */
+    
 }
 
 .rabbit-inner:hover{
@@ -372,6 +377,7 @@ ul.main-nav li a:hover{
 .bottom-image{
     background-image: url(images/trees.png);
     height: 448px;
+    background-repeat: repeat-x;
 }
 
 #bottom-image{
@@ -464,7 +470,6 @@ h1.tequillas-title{
 }
 
 .drink-container{
-    width: 100%;
     float: left;
     padding-left: 100px;
 }
@@ -482,7 +487,6 @@ h1.tequillas-title{
 }
 
 .drink-info-container{
-    width: 700px;
     float: left;
     margin-top: 150px;
 }
@@ -536,6 +540,7 @@ h3.drink-title{
     left: 47px;
     margin-top: -60px;
     z-index: 800;
+    font-family: 'patronmedium';
 }
 
 /*recipie overlay*/
@@ -605,7 +610,7 @@ h1.locator-title{
 
 #storelocate{
     background-repeat: repeat-x;
-    z-index: 701;
+    z-index: 699;
     background-image: url(images/locator-bg.png);
 }
 
@@ -744,9 +749,7 @@ h1.photos-title {
 
 /*process*/
 
-#process{
-    margin-left: 76px;
-}
+
 
 h1.process-title{
     width: 398px;
@@ -772,7 +775,7 @@ h1.process-title{
 .nivo-controlNav{
     float: right;
     position: relative;
-    bottom: 163px;
+    bottom: 308px;
     background-color: rgba(0,0,0,.5);
     width: 100%;
     text-align: right;
@@ -922,6 +925,10 @@ footer h1{
     background-color: #000;
 }
 
+.social-bar .wrapped{
+    z-index: 999;
+}
+
 .social-bar p {
     float: left;
     margin-top: 22px;
@@ -991,6 +998,8 @@ ul.social-icons li a:hover{
     background-repeat: no-repeat;
 }
 
+
+
 .facebook{
     background-image: url(images/facebook.png);
 }
@@ -1021,9 +1030,10 @@ ul.social-icons li a:hover{
 
 
 .terms{
-    width: 720px;
+    width: 740px;
     height: 510px;
     padding: 10px 10px 10px 20px;
+    overflow-x: hidden;
 }
 
 .terms h3{
@@ -1314,13 +1324,13 @@ a#scroll-to-top{
 .newsletter-contain input[type="submit"]{
     width: 47px;
     height: 50px;
-    float: left;
     background: none;
     border: none;
     background-image: url(images/newsletter_go.png);
     position: relative;
-    top: -8px;
+    top: -4px;
     cursor: pointer;
+    font-size: 0;
 }
 
 
@@ -1398,6 +1408,8 @@ a#scroll-to-top{
     font-size: 12pt!important;
 }
 
+
+
 .store-locator-container{
     height: 850px;
     background-image: url(images/store_locator_bg.png);
@@ -1434,6 +1446,8 @@ a#scroll-to-top{
     top: 40px;
 }
 
+
+
 #no-store{
     display: none;
     float: left;
@@ -1453,13 +1467,59 @@ a#scroll-to-top{
 
 
 
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-    #rabbit{
-        z-index: 999;
-    }
+
+
+
+header{
+    z-index: 800;
+}
+
+.rabbit-inner{
+    margin-bottom: 400px;
+    margin-left: 100px;
+}
+
+.bottom-image{
+    background-position-x:-60px ;
+}
+
+.nivo-controlNav{
+    float: right;
+    position: relative;
+    bottom: 308px;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+    z-index: 200;
+    
+}
+
+.recipie-overlay{
+    width: 100%!important;
+    z-index: 802;
+}
+
+
+@media only screen 
+
+and (device-width : 480px) {
+
+
+
+.rabbit-inner{
+    margin-bottom: -110px;
+    
+}
+
+
+
+
     
 
 }

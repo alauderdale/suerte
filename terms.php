@@ -7,10 +7,9 @@
  .fancybox-skin{
      background: none;
      background-image: url(<?php bloginfo('template_url'); ?>/images/terms_bg.png);
-     width: 812px!important;
      height: 482px!important;
      float: left!important;
-     padding: 26px 3px 72px 35px!important;
+     padding: 26px 35px 72px 35px!important;
      background-repeat: no-repeat;
      box-shadow: none!important;
  }

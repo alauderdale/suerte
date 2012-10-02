@@ -63,7 +63,7 @@ $(window).load(function() {
     $(window).scroll(function(){
      var divOffset2 = $('.nivo-caption').offset();
      if(window.scrollY > divOffset2.top ){
-        $('.rabbit-inner').css('top','-500px');
+        $('.rabbit-inner').css('top','-600px');
 
      }
      if(window.scrollY < divOffset2.top){

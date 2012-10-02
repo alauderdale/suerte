@@ -266,7 +266,7 @@
                         </p>
                     </div>
                     <div class="line-text">
-                        <h1><em>Cut Here Line</em></h1>
+                        <h1>Cut Here Line</h1>
                         <p>Keeping in mind that the Suerte
                         Rabbit is not a real living being...
                         cut along the dashed line 

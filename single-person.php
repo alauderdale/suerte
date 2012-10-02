@@ -1,7 +1,11 @@
 <style>
 .fancybox-skin{
-   border-radius: 40px;
+   background: none;
    
+}
+.person-overlay{
+    background: #fff;
+    border-radius: 50px;
 }
 .fancybox-close{
     background-image: url(<?php bloginfo('template_url'); ?>/images/close_x.png);

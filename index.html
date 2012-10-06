@@ -1,91 +1,239 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Suerte Tequila</title>
+<title>Suerte Tequila</title>
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <!--external stylesheets-->
+    <link rel="stylesheet" type="text/css" href="css/carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!--  slider -->
+    <script src="js/jquery.nivo.slider.js"></script>
+    <!--  carousel-->
+    <script src="js/jquery.jcarousel.js"></script>
+    <!--  fancybox-->
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <!--  masonry-->
+    <script src="js/jquery.masonry.js"></script>
+    <!-- smooth scroll-->
+    <script src="js/smoothscroll.js"></script>
+    <!--  script config-->
+    <script src="js/scripts.js"></script>
 </head>
 <body>
     <header>
         <nav class="main-nav-wrapper">
             <div class="logo">
-                <a href="#"></a>
+                <a href="#home"></a>
             </div>
-            <ul class="main-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tequillas</a></li>
-                <li><a href="#">Store Locator</a></li>
-                <li><a href="#">Photos &amp; <br/> Videos</a></li>
-                <li><a href="#">The Tequilla <br/> Process</a></li>
-                <li><a href="#">Press &amp;<br/> Awards</a></li>
-            </ul>
+            <div id="navigation">
+                <ul class="main-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tequilas</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Photos &amp; <br/> Videos</a></li>
+                    <li><a href="#">The Tequilla <br/> Process</a></li>
+                    <li><a href="#">Press &amp;<br/> Awards</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <div id="container">
-        <div class="page home">
-            <h1 class=" title-max-tilt"><span class="luck">Luck</span> <br/><span class="mini-is">is</span><br/><span class="here"> here</span></h1>
-            <div class="clearfix"></div>
-            <div class="home-descrip">
-            <p>
-                <strong>
-                    The Suerte Difference
-                </strong>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam euismod lacus, in porttitor leo dapibus eget. Aenean sed quam tortor, id pellentesque nunc. Aenean porttitor cursus faucibus. Phasellus eget tortor eu odio ultricies faucibus vel vel dui. Donec gravida interdum diam non sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In eu enim elit, luctus eleifend ligula. In hendrerit lacus in velit faucibus non tristique neque euismod. Nullam non feugiat purus. Ut suscipit vulputate rutrum.
-                </p>
+        <section id="home" class="clearfix section">
+            <div class="page wrapped">
+                <h1 class=" title-max-tilt"><span class="luck">Luck</span> <br/><span class="mini-is">is</span><br/><span class="here"> here</span></h1>
+                <div class="clearfix"></div>
+                <div class="home-descrip" id="fade-bottom-image">
+                    <p>
+                        <strong>
+                            The Suerte Difference
+                        </strong>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam euismod lacus, in porttitor leo dapibus eget. Aenean sed quam tortor, id pellentesque nunc. Aenean porttitor cursus faucibus. Phasellus eget tortor eu odio ultricies faucibus vel vel dui. Donec gravida interdum diam non sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In eu enim elit, luctus eleifend ligula. In hendrerit lacus in velit faucibus non tristique neque euismod. Nullam non feugiat purus. Ut suscipit vulputate rutrum.
+                    </p>
+                </div>
+            </div><!--end page-->
+            <div class="bottom-image" id="bottom-image"><!--end bottom image-->
             </div>
-            <div class="bottom-image"><!--end bottom image-->
+        </section><!--end page-wrapper-->
+        <section id="tequillas" class="clearfix section">
+            <div class="page wrapped">
+                <div class="teq-arrow"></div>
+                <h1 class="title-tilt">Tequilas</h1>
+                <div class="drink-container">
+                    <div class="bottle reposado">
+                        <h3 class="title-tilt drink-title">reposado</h3>
+                    </div><!--end bottle-->
+                    <div class="drink-info-container">
+                        <div class="drink-descrip">
+                             <p>
+                             In eu enim elit, luctus eleifend ligula. In hendrerit lacus in velit faucibus non tristique neque euismod. Nullam non feugiat purus. Ut suscipit vulputate rutrum.
+                             </p>
+                             <p>
+                                 750ml, 40 Alc. by Volume
+                             </p>
+                        </div>
+                        <p class="recipies">recipies:</p>
+                        <div class="drink-slider-container">
+                            <ul id="drink-slider" class="jcarousel-skin-tango">
+                              <li>
+                                  <a class="fancybox fancybox.iframe" href="single-drink.html">
+                                      <img src="images/marg.png"/>
+                                  </a>
+                                  <div class="recipie-title">
+                                      <p>Frozen Margarita</p>
+                                  </div>
+                              </li>
+                              <li>
+                                  <a class="fancybox fancybox.iframe" href="single-drink.html">
+                                      <img src="images/marg.png"/>
+                                  </a>
+                                  <div class="recipie-title">
+                                      <p>Frozen Margarita</p>
+                                  </div>
+                              </li>
+                              <li>
+                                  <a class="fancybox fancybox.iframe" href="single-drink.html">
+                                      <img src="images/marg.png"/>
+                                  </a>
+                                  <div class="recipie-title">
+                                      <p>Frozen Margarita</p>
+                                  </div>
+                              </li>
+                              <li>
+                                  <a class="fancybox fancybox.iframe" href="single-drink.html">
+                                      <img src="images/marg.png"/>
+                                  </a>
+                                  <div class="recipie-title">
+                                      <p>Frozen Margarita</p>
+                                  </div>
+                              </li>
+                              <li>
+                                  <a class="fancybox fancybox.iframe" href="single-drink.html">
+                                      <img src="images/marg.png"/>
+                                  </a>
+                                  <div class="recipie-title">
+                                      <p>Frozen Margarita</p>
+                                  </div>
+                              </li>
+                              <li>
+                                  <a class="fancybox fancybox.iframe" href="single-drink.html">
+                                      <img src="images/marg.png"/>
+                                  </a>
+                                  <div class="recipie-title">
+                                      <p>Frozen Margarita</p>
+                                  </div>
+                              </li>
+                            </ul>
+                        </div>
+                    </div><!--end drink info container-->
+                </div><!--end drink container-->
+            </div><!--end page-->
+        </section> <!--end page-wrapper-->
+        <section id="storelocate" class="clearfix section">
+            <div class="wrapped">
+            <h1 class="title-tilt ">Store Locator</h1>
             </div>
-        </div><!--end page-->
-        <div class="clearfix"></div>
-        <div class="page tequillas">
-            <h1 class="title-tilt">Tequillas</h1>
-            <div class="drink-container">
-                <div class="bottle reposado">
-                    <h3 class="title-tilt drink-title">reposado</h3>
-                </div><!--end bottle-->
-                <div class="drink-info-container">
-                    <div class="drink-descrip">
-                         <p>
-                         In eu enim elit, luctus eleifend ligula. In hendrerit lacus in velit faucibus non tristique neque euismod. Nullam non feugiat purus. Ut suscipit vulputate rutrum.
-                         </p>
-                         <p>
-                             750ml, 40 Alc. by Volume
-                         </p>
-                    </div>
-                    <div class="recipies">
-                    </div><!--end recipies-->
-                </div><!--end drink info container-->
-            </div><!--end drink container-->
-        </div><!--end page-->
-        <div class="clearfix"></div>
-        <div class="page store-locate">
-            <h1 class="title-tilt">Store Locator</h1>
             <div class="locator-banner">
+                <div class="center">
                 <h2>Find Suerte Near You!</h2>
+                </div>
+            </div>
+            <div class="page wrapped" >
                 <div class="store-locator-container">
                 </div>
-            </div>
-        </div><!--end page-->
-        <div class="clearfix"></div>
-        <div class="page store-locate">
-            <h1 class="title-tilt">Photos &amp;<br> Videos</h1>
-            <div class="locator-banner">
-                <h2>Find Suerte Near You!</h2>
-                <div class="media-container">
-                    <div class="media-item">
-                        <img src="http://placekitten.com/g/200/300">
+            </div><!--end page-->
+        </section> <!--end page-wrapper-->
+        <section id="photos-vids" class="clearfix section">
+            <div class="page wrapped">
+                <h1 class="title-tilt">Photos &amp;<br> Videos</h1>
+                <div class="media-container" id="media-contain" class="clearfix">
+                    <div class="media-item box">
+                        <a class="fancybox" href="images/slider-demo.png" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/slider-demo.png" alt="" />
+                        </a>
                     </div>
-                    <div class="media-item">
-                        <img src="http://placekitten.com/g/200/300">
+                    <div class="media-item box">
+                        <a class="fancybox" href="images/slider-demo.png" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/slider-demo.png" alt="" />
+                        </a>
                     </div>
-                    <div class="media-item">
-                        <img src="http://placekitten.com/g/200/300">
+                    <div class="media-item box">
+                        <a class="fancybox" href="images/slider-demo.png" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/slider-demo.png" alt="" />
+                        </a>
                     </div>
-                </div>
-            </div>
-        </div><!--end page-->
-        <div class="clearfix"></div>
+                    <div class="media-item box">
+                        <a class="fancybox" href="images/slider-demo.png" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/slider-demo.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="media-item box">
+                        <a class="fancybox" href="images/slider-demo.png" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/slider-demo.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="media-item box">
+                        <a class="fancybox" href="images/slider-demo.png" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/slider-demo.png" alt="" />
+                        </a>
+                    </div>
+                </div><!--end media container-->
+            </div><!--end page-->
+        </section> <!--end page-wrapper-->
+        <section id="process" class="clearfix section">
+            <div class="page wrapped">
+                <h1 class="title-tilt"><span class="the-word">The</span><span class="tequilla-word"> Tequilla</span><br> Process</h1>
+                <div class="process-descrip">
+                    <p>Pellentesque feugiat ante sit amet augue mollis ut convallis justo tempus. Phasellus laoreet tincidunt neque venenatis scelerisque. Sed ut orci tempus leo malesuada varius non sit amet risus. Mauris pellentesque, lectus et ullamcorper rutrum, augue velit placerat lacus, sit amet malesuada mi mauris sed mi. Nam non ligula augue. Aliquam ut volutpat quam. Nam vehicula metus id ante semper in luctus ligula pretium. In hac habitasse platea dictumst. Integer sem libero, gravida id tempor malesuada, blandit et nibh. Integer nec hendrerit mi. Nullam dolor lorem, dictum vitae adipiscing nec, lobortis faucibus enim. Nullam auctor, nunc et vestibulum accumsan, elit nulla hendrerit elit, vel laoreet enim libero quis quam.</p>
+                </div>   
+                <div class="process-slider">
+                    <div class="slider-wrapper">
+                        <div id="process-slider" class="nivoSlider">
+                            <img src="images/slider-demo.png"  alt=""  title="#htmlcaption"  />
+                            <img src="images/slider-demo2.png"  alt=""  title="#htmlcaption2"  />
+                        </div>
+                        <div id="htmlcaption" class="nivo-html-caption">
+                            <h1>jalisco</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut pretium libero. Integer ut nulla urna, non elementum lacus. Nullam egestas, magna a euismod pharetra, nibh ante imperdiet enim, ut adipiscing mi sem vitae nisl. Sed cursus ultricies malesuada. </p> 
+                        </div>
+                        <div id="htmlcaption2" class="nivo-html-caption">
+                            <h1>Whooooo</h1>
+                            <p>lor sit amet, consectetueuismod pharetra, nibh ante imperdiet enim, ut adipiscing mi sem vitae nisl. Sed cursus ultricies malesuada. </p> 
+                        </div>
+                    </div>
+                </div><!--end process slider-->
+            </div><!--end page-->
+        </section> <!--end page-wrapper-->
     </div> <!--end container-->
+    <footer>
+        <div class="wrapped clearfix">
+            <div class="footer-col">
+                <h1>Keep in Touch</h1>
+                <p>newsletter comming soon!</p>
+            </div>
+            <div class="footer-col">
+                <h1>Contact Us</h1>
+                <p>call 1800.777.7777<br/>
+                email <a href="mailto:info@drinksuerte.com">info@drinksuerte.com</a></p>
+            </div>
+            <div class="footer-col">
+                <h1>Suerte Tequila</h1>
+                <p>Suerte Tequila <br/>
+                40% alc./vol. (80 Proof)<br/>
+                Imported by Colorado Spirits Importers, LLC<br/>
+                Boulder, CO.<br/>
+                Please enjoy responsibly.<br/>
+                &copy; 2012
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="social-bar">
+        <div class="wrapped clearfix">
+            <p>&copy; 2012 all right reserved Suerte Tequila             <a href="#">Terms of service</a></p>
+            <ul class="social-icons">
+                <li><a class="facebook" href="#"></a></li>
+                <li><a class="twitter" href="#"></a></li>
+                <li><a class="pintrist" href="#"></a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

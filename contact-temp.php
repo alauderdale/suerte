@@ -3,12 +3,10 @@
  Template Name: contact
  */ ?>
  
-  <?php wp_head(); ?>
+<?php wp_head(); ?>
 
  
 <style>
-
-
 
 .fancybox-skin{
    border-radius: 40px;

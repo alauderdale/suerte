@@ -81,10 +81,13 @@ em{
 }
 
 .enter-bottles{
-    width: 131px;
-    height: 184px;
+    width: 365px;
+    height: 376px;
     background-image: url(images/enter_bottles.png);
     float: left;
+    margin-right: -235px;
+    right: 160px;
+    position: relative;
 }
 
 .enter-page{
@@ -221,11 +224,9 @@ ul.menu {
 }
 
 header{
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+    z-index: 902;
     position: fixed;
-    z-index: 802;
-    float: left;
 }
 
 .logo a{
@@ -273,8 +274,9 @@ ul.main-nav li{
     margin-right: 29px;
     text-transform: uppercase;
     font-size: 11pt;
-    font-weight: bolder;
 }
+
+
 
 ul.main-nav li:nth-child(3){
     margin-right: 270px;
@@ -282,6 +284,10 @@ ul.main-nav li:nth-child(3){
 
 ul.main-nav li:last-of-type{
     margin-right: 0;
+}
+
+li.home-link{
+    margin-left: 25px!important;
 }
 
 
@@ -293,9 +299,9 @@ ul.main-nav li a{
     -o-transition-duration: .2s; /* Opera */
 }
 
-ul.main-nav li a:hover{
-    color: #f26223;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+ul.main-nav li a:hover, .active{
+    color: #f26223!important;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5)!important;
 }
 
 /*container*/
@@ -365,6 +371,13 @@ a .rabbit-inner{
     margin: 8px 258px 20px 1px; 
     float: left;
 }
+
+.home-descrip h3{
+  margin-bottom: 20px;
+  text-shadow: 0 1px 8px rgba(0,0,0,.9);
+}
+
+
 
 .bottom-image-contain{
     float: left;
@@ -1303,12 +1316,13 @@ a.line:hover{
 /*scroll to top*/
 
 a#scroll-to-top{
-    left: 15px!important;
-    width: 143px!important;
-    height: 146px!important;
+    left: 7px!important;
+    width: 40px!important;
+    height: 40px!important;
     background-image: url(images/scroll-bg.png)!important;
     bottom: 275px!important;
     z-index: 9999999;
+    top: 10px!important;
 
     
 }
@@ -1483,9 +1497,6 @@ and (max-device-width : 480px) {
 
 
 
-header{
-    z-index: 800;
-}
 
 .rabbit-inner{
     margin-bottom: 400px;

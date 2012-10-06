@@ -139,10 +139,11 @@ $('#location_search_submit_field').click(function(){
 
 
 
-//contact
+//nav
 
 
-	
+
+		
 	
 
 

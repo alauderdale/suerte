@@ -75,30 +75,34 @@ $(window).load(function() {
       
 //rabbit position
 
+var userAgent = navigator.userAgent;
 
+if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+   // iPad or iPhone
+}
+else {
+   $(function(){  
+     $('#rabbit').fadeIn(50);
+   });
+   
+   
+   $(window).resize(function(){
+        resizenow();
+   });
+   
+   
+   function resizenow() {
+       var browserwidth = $(window).width();
+       var browserheight = $(window).height();
+       $('#rabbit').css('left', ((browserwidth + 1300 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
+   };
+   
+   
+   resizenow();
+}
     
 
-$(function(){  
-  $('#rabbit').fadeIn(50);
-});
 
-
-$(window).resize(function(){
-     resizenow();
-});
-
-
-function resizenow() {
-    var browserwidth = $(window).width();
-    var browserheight = $(window).height();
-    $('#rabbit').css('left', ((browserwidth + 1300 - $("#rabbit").width())/2)).css('top', ((browserheight + 200 - $("#rabbit").height())/2));
-    
-
-    
-};
-
-
-resizenow();
 
 
 

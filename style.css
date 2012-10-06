@@ -85,9 +85,11 @@ em{
     height: 376px;
     background-image: url(images/enter_bottles.png);
     float: left;
-    margin-right: -235px;
-    right: 160px;
+    margin-right: -225px;
+    right: 20px;
     position: relative;
+    background-size:65%;
+    background-repeat: no-repeat;
 }
 
 .enter-page{
@@ -332,6 +334,7 @@ ul.main-nav li a:hover, .active{
     float: left;
     display: none;
     z-index: 900;
+    background-size:100% 100%;
 }
 
 a .rabbit-inner{
@@ -1496,11 +1499,18 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
 
-
+#rabbit{
+    display: block;
+    left: 700px;
+    
+}
 
 .rabbit-inner{
     margin-bottom: 400px;
     margin-left: 100px;
+    top: 10px;
+    background-size:70% 70%;
+    background-repeat: no-repeat;
 }
 
 .bottom-image{
@@ -1523,22 +1533,6 @@ and (max-device-width : 480px) {
     width: 100%!important;
     z-index: 802;
 }
-
-
-@media only screen 
-
-and (device-width : 480px) {
-
-
-
-.rabbit-inner{
-    margin-bottom: -110px;
-    
-}
-
-
-
-
     
 
 }

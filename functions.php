@@ -103,6 +103,18 @@ function create_my_post_types() {
             
             		)
             	);
+            	
+            register_post_type( 'press',
+            		array(
+            			'labels' => array(
+            				'name' => __( 'Press & Awards' ),
+            				'singular_name' => __( 'press entry' )
+            			),
+            			'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
+            			'public' => true,
+            
+            		)
+            	);
 }
 
 ///custom categories

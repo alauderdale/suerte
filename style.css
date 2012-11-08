@@ -81,10 +81,15 @@ em{
 }
 
 .enter-bottles{
-    width: 131px;
-    height: 184px;
+    width: 365px;
+    height: 376px;
     background-image: url(images/enter_bottles.png);
     float: left;
+    margin-right: -225px;
+    right: 20px;
+    position: relative;
+    background-size:65%;
+    background-repeat: no-repeat;
 }
 
 .enter-page{
@@ -221,11 +226,9 @@ ul.menu {
 }
 
 header{
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+    z-index: 902;
     position: fixed;
-    z-index: 802;
-    float: left;
 }
 
 .logo a{
@@ -273,8 +276,9 @@ ul.main-nav li{
     margin-right: 29px;
     text-transform: uppercase;
     font-size: 11pt;
-    font-weight: bolder;
 }
+
+
 
 ul.main-nav li:nth-child(3){
     margin-right: 270px;
@@ -282,6 +286,10 @@ ul.main-nav li:nth-child(3){
 
 ul.main-nav li:last-of-type{
     margin-right: 0;
+}
+
+li.home-link{
+    margin-left: 25px!important;
 }
 
 
@@ -293,9 +301,9 @@ ul.main-nav li a{
     -o-transition-duration: .2s; /* Opera */
 }
 
-ul.main-nav li a:hover{
-    color: #f26223;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+ul.main-nav li a:hover, .active{
+    color: #f26223!important;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5)!important;
 }
 
 /*container*/
@@ -326,6 +334,7 @@ ul.main-nav li a:hover{
     float: left;
     display: none;
     z-index: 900;
+    background-size:100% 100%;
 }
 
 a .rabbit-inner{
@@ -365,6 +374,13 @@ a .rabbit-inner{
     margin: 8px 258px 20px 1px; 
     float: left;
 }
+
+.home-descrip h3{
+  margin-bottom: 20px;
+  text-shadow: 0 1px 8px rgba(0,0,0,.9);
+}
+
+
 
 .bottom-image-contain{
     float: left;
@@ -798,6 +814,38 @@ h1.process-title{
 
 /*press*/
 
+.press-item-caption {
+    width: 360px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.press-item-contain img{
+    width: 360px;
+    height: auto;
+}
+
+.press-item-contain{
+    opacity: 1;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+    padding: 5px;
+    background-color: rgba(0,0,0, .3);
+    margin: 5px;
+    border-radius:5px;
+    width: 360px;
+}
+
+.press-item-contain:hover{
+    opacity: .8;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s; /* Firefox 4 */
+    -webkit-transition-duration: .2s; /* Safari and Chrome */
+    -o-transition-duration: .2s; /* Opera */
+}
+
 h1.press-title{
     background-image: url(images/press_title.png);
     width: 356px;
@@ -1025,6 +1073,7 @@ ul.social-icons li a:hover{
 .result_directions{
     position: relative;
     top: 50px;
+    display: none;
 }
 
 /*temrs*/
@@ -1303,12 +1352,13 @@ a.line:hover{
 /*scroll to top*/
 
 a#scroll-to-top{
-    left: 15px!important;
-    width: 143px!important;
-    height: 146px!important;
+    left: 7px!important;
+    width: 40px!important;
+    height: 40px!important;
     background-image: url(images/scroll-bg.png)!important;
     bottom: 275px!important;
     z-index: 9999999;
+    top: 10px!important;
 
     
 }
@@ -1416,6 +1466,13 @@ a#scroll-to-top{
     font-size: 12pt!important;
 }
 
+/*#results, #simplemap{
+    display: none!important;
+}
+
+.store-locator-container{
+    background: none!important;
+}*/
 
 
 .store-locator-container{
@@ -1482,14 +1539,18 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
 
-
-header{
-    z-index: 800;
+#rabbit{
+    display: block;
+    left: 700px;
+    
 }
 
 .rabbit-inner{
     margin-bottom: 400px;
     margin-left: 100px;
+    top: 10px;
+    background-size:70% 70%;
+    background-repeat: no-repeat;
 }
 
 .bottom-image{
@@ -1512,22 +1573,6 @@ header{
     width: 100%!important;
     z-index: 802;
 }
-
-
-@media only screen 
-
-and (device-width : 480px) {
-
-
-
-.rabbit-inner{
-    margin-bottom: -110px;
-    
-}
-
-
-
-
     
 
 }

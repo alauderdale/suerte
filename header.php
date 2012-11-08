@@ -4,20 +4,8 @@
     <title>
         <?php wp_title(''); ?> <?php bloginfo('name'); ?>
     </title>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <!--  pagination -->
-    <script src="<?php bloginfo('template_url'); ?>/js/jquery.cookie.js"></script>
-    <script type="text/javascript">
-    	$(function() {
-    		var COOKIE_NAME = 'splash-page-cookie';
-    		$go = $.cookie(COOKIE_NAME);
-    		if ($go == null) {
-    			$.cookie(COOKIE_NAME, 'test', { path: '/' });
-    			window.location = "index.php?pagename=enter"
-    		}
-    	});
-    </script>
-    <!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
+<!--    <script src="http://code.jquery.com/jquery-latest.js"></script>-->
+    <script src="<?php bloginfo('template_url'); ?>/js/jquery-1.7.2.min.js"></script>
     <!--external stylesheets-->
     <link rel= "shortcut icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/carousel.css" />
@@ -32,14 +20,22 @@
     <script src="<?php bloginfo('template_url'); ?>/js/jquery.masonry.js"></script>
     <!-- smooth scroll-->
     <script src="<?php bloginfo('template_url'); ?>/js/smoothscroll.js"></script>
+    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32629414-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
   <?php wp_head(); ?>
 </head>
 <body>
-<?php
-
-   header( 'Location: http://www.yoursite.com/new_page.html' ) ;
-
-?>
     <header>
         <nav class="main-nav-wrapper">
             <div class="logo">
@@ -47,7 +43,7 @@
             </div>
             <div id="navigation">
                 <ul class="main-nav">
-                    <li class="horz-align"><a href="#">Home</a></li>
+                    <li class="horz-align home-link"><a href="#">Home</a></li>
                     <li class="horz-align"><a href="#">Tequilas</a></li>
                     <li class="horz-align"><a href="#">Store Locator</a></li>
                     <li><a href="#">Photos &amp; <br/> Videos</a></li>
@@ -55,7 +51,6 @@
                     <li><a href="#">Press &amp;<br/> Awards</a></li>
                 </ul>
             </div>
-            
         </nav>
     </header>
     <div id="container">

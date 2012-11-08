@@ -142,12 +142,10 @@ $('#location_search_submit_field').click(function(){
 });
 
 
-
 //nav
 
 
 
-		
 	
 
 

@@ -36,10 +36,18 @@
   <?php wp_head(); ?>
 </head>
 <body>
+    <div class="s-cart">
+        <div class="wrapped">
+            <?php 
+                if ( dynamic_sidebar('cart') ) : 
+            ?>
+        </div>
+    </div>
+    <?php endif; ?>
     <header>
         <nav class="main-nav-wrapper">
             <div class="logo">
-                <a href="#home"></a>
+                <a href="<?php echo get_option('home'); ?>"></a>
             </div>
             <div id="navigation">
                 <ul class="main-nav">

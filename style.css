@@ -229,6 +229,7 @@ header{
   width: 100%;
     z-index: 902;
     position: fixed;
+    margin-top: 12px;
 }
 
 .logo a{
@@ -1358,7 +1359,7 @@ a#scroll-to-top{
     background-image: url(images/scroll-bg.png)!important;
     bottom: 275px!important;
     z-index: 9999999;
-    top: 10px!important;
+    top: 40px!important;
 
     
 }
@@ -1530,7 +1531,50 @@ a#scroll-to-top{
     height: 537px!important;
 }
 
+.page-content{
+    margin-top: 160px;
+    float: left;
+    width: 100%;
+}
 
+/* cart */
+
+.s-cart {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    float: left;
+}
+
+.s-cart br{
+    float: left;
+    display: none;
+}
+
+#wpco-2-inside, .cart, a.ui-button{
+    position: relative;
+    top: -10px;
+
+}
+
+.s-cart ul li,.s-cart ul, .s-cart a, .s-cart p {
+    float: left;
+    margin: 0;
+    margin-right: 5px;
+}
+
+a.ui-button{
+    padding: 0px!important;
+    margin-top: 3px;
+}
+
+#wpadminbar{
+    display: none!important;
+}
 
 
 /* Smartphones (portrait and landscape) ----------- */

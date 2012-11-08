@@ -272,6 +272,15 @@ function suerte_widgets_init() {
 		'before_title' => '<h1>',
 		'after_title' => '</h1>',
 	) );
+
+  register_sidebar( array(
+    'name' => 'Shopping Cart',
+    'id' => 'cart',
+    'before_widget' => '',
+    'after_widget' => '',
+    'before_title' => '<p>',
+    'after_title' => '</p>',
+  ) );
 }
 add_action( 'widgets_init', 'suerte_widgets_init' ); 
 
